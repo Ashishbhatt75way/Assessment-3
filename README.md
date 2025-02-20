@@ -40,6 +40,7 @@ npm install --force
 npm run dev 
 ```
 
+
 The application will run on `http://localhost:5174`.
 
 ## Setting Up JSON Server
