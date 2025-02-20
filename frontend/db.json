@@ -1,0 +1,145 @@
+{
+  "urls": [
+    {
+      "id": "24344",
+      "originalUrl": "https://www.netflix.com",
+      "shortCode": "nflx102",
+      "shortUrl": "http://localhost:5000/nflx102",
+      "clicks": 89,
+      "analytics": [
+        {
+          "timestamp": "2024-05-22T08:10:00Z",
+          "ip": "192.168.1.6",
+          "browser": "Firefox",
+          "device": "Tablet",
+          "location": "Canada"
+        }
+      ],
+      "expiresAt": "2025-03-12T00:00:00Z",
+      "qrCode": "http://localhost:5000/qrcodes/nflx102.png"
+    },
+    {
+      "id": "244",
+      "originalUrl": "https://www.facebook.com",
+      "shortCode": "fb900",
+      "shortUrl": "http://localhost:5000/fb900",
+      "clicks": 200,
+      "analytics": [
+        {
+          "timestamp": "2024-06-01T14:00:00Z",
+          "ip": "192.168.1.7",
+          "browser": "Chrome",
+          "device": "Mobile",
+          "location": "Italy"
+        }
+      ],
+      "expiresAt": "2025-07-20T00:00:00Z",
+      "qrCode": "http://localhost:5000/qrcodes/fb900.png"
+    },
+    {
+      "id": "254c",
+      "originalUrl": "https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "shortCode": "wj8ls5",
+      "shortUrl": "http://localhost:5000/m7loa8",
+      "expiresAt": "2025-02-21T10:53:25.550Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2024-06-01T14:00:00Z",
+          "ip": "192.168.1.7",
+          "browser": "Chrome",
+          "device": "Mobile",
+          "location": "Italy"
+        }
+      ]
+    },
+    {
+      "id": "30ad",
+      "originalUrl": "https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "shortCode": "fp3hiu",
+      "shortUrl": "http://localhost:5000/s4aa86",
+      "expiresAt": "2025-02-21T10:54:05.191Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2024-06-01T14:00:00Z",
+          "ip": "192.168.1.7",
+          "browser": "Chrome",
+          "device": "Mobile",
+          "location": "Italy"
+        }
+      ]
+    },
+    {
+      "id": "ffe3",
+      "originalUrl": "https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "shortCode": "ti0wqo",
+      "shortUrl": "http://localhost:5000/excnz5",
+      "expiresAt": "2025-02-21T10:57:15.171Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2024-06-01T14:00:00Z",
+          "ip": "192.168.1.7",
+          "browser": "Chrome",
+          "device": "Mobile",
+          "location": "Italy"
+        }
+      ]
+    },
+    {
+      "id": "2672",
+      "originalUrl": "https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "shortCode": "5crof2",
+      "shortUrl": "http://localhost:5000/azz4qn",
+      "expiresAt": "2025-02-22T11:06:14.232Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://chat.deepseek.com/a/chat/s/ee0d9ec6-0e46-49a7-a0bc-d8cd95b68a43",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2025-02-20T11:06:14.232Z",
+          "location": "Address not found",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "7b01",
+      "originalUrl": "https://chatgpt.com/c/67b7103d-e11c-800a-afdd-45b11bb18107",
+      "shortCode": "8f6lh7",
+      "shortUrl": "http://localhost:5000/fb4awn",
+      "expiresAt": "2025-02-22T11:52:03.755Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://chatgpt.com/c/67b7103d-e11c-800a-afdd-45b11bb18107",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2025-02-20T11:52:03.755Z",
+          "location": "Alawalpur, Punjab, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "1273",
+      "originalUrl": "https://github.com/Ashishbhatt97?tab=repositories",
+      "shortCode": "yudurc",
+      "shortUrl": "http://localhost:5000/y6fpvv",
+      "expiresAt": "2025-02-22T12:52:38.764Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://github.com/Ashishbhatt97?tab=repositories",
+      "clicks": 0,
+      "analytics": [
+        {
+          "timestamp": "2025-02-20T12:52:38.764Z",
+          "location": null,
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    }
+  ]
+}

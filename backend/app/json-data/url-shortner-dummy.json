@@ -1,0 +1,52 @@
+[
+    {
+        "originalUrl": "https://www.google.com",
+        "shortCode": "g1234",
+        "shortUrl": "http://localhost:5000/g1234",
+        "clicks": 15,
+        "analytics": [
+            {
+                "timestamp": "2024-02-10T10:15:00Z",
+                "ip": "192.168.1.1",
+                "browser": "Chrome",
+                "device": "Desktop",
+                "location": "India"
+            },
+            {
+                "timestamp": "2024-02-11T14:30:00Z",
+                "ip": "192.168.1.2",
+                "browser": "Firefox",
+                "device": "Mobile",
+                "location": "USA"
+            }
+        ],
+        "expiresAt": "2025-01-01T00:00:00Z",
+        "qrCode": "http://localhost:5000/qrcodes/g1234.png"
+    },
+    {
+        "originalUrl": "https://www.github.com",
+        "shortCode": "gh5678",
+        "shortUrl": "http://localhost:5000/gh5678",
+        "clicks": 23,
+        "analytics": [
+            {
+                "timestamp": "2024-02-12T09:00:00Z",
+                "ip": "192.168.1.3",
+                "browser": "Safari",
+                "device": "Tablet",
+                "location": "UK"
+            }
+        ],
+        "expiresAt": "2025-06-30T00:00:00Z",
+        "qrCode": "http://localhost:5000/qrcodes/gh5678.png"
+    },
+    {
+        "originalUrl": "https://www.medium.com",
+        "shortCode": "md9023",
+        "shortUrl": "http://localhost:5000/md9023",
+        "clicks": 5,
+        "analytics": [],
+        "expiresAt": "2024-12-31T00:00:00Z",
+        "qrCode": "http://localhost:5000/qrcodes/md9023.png"
+    }
+]
