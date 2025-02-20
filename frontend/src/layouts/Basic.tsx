@@ -17,21 +17,6 @@ function Basic() {
         <div className="flex items-center justify-between mx-auto px-20">
           <div>URL</div>
 
-          <div className="flex gap-10 items-center font-medium tracking-wide leading-6 pl-44">
-            <NavLink
-              to={"/"}
-              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to={"/qr"}
-              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
-            >
-              Generate QR
-            </NavLink>
-          </div>
-
           <div className="flex gap-4">
             <button
               className="text-white bg-neutral-800 rounded-full px-8 py-2"

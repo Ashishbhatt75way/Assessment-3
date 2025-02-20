@@ -17,7 +17,6 @@ function App() {
         <Route path="/admin-panel" element={<AdminPanel />} />
       </Route>
       <Route element={<BasicLayout />}>
-        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
       </Route>

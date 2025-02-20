@@ -24,7 +24,7 @@ export default function Authanticated() {
       <div className="navbar p-5 w-full bg-black text-slate-300 border-b-[1px] fixed z-[100] border-[#fff]/20">
         <div className="flex items-center justify-between mx-auto px-20">
           <button className="cursor-pointer" onClick={() => navigate("/")}>
-            Logo
+            UrlShort
           </button>
 
           <div className="flex gap-10 items-center font-medium tracking-wide leading-6 pl-44">
