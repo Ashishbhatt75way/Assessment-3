@@ -1,4 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { urlApi } from "../../services/urlApi";
+
 const initialState: ShortenedURL[] = [];
 
 export const urlSlice = createSlice({
@@ -9,8 +11,22 @@ export const urlSlice = createSlice({
       state.push(action.payload);
     },
     deleteUrl: (state, action: PayloadAction<{ id: number }>) => {
-      state = state.filter((url) => url.id !== action.payload.id);
+      return state.filter((url) => url.id !== action.payload.id);
     },
+  },
+  extraReducers: (builder) => {
+    builder.addMatcher(
+      urlApi.endpoints.getShortUrls.matchFulfilled,
+      (state, action: PayloadAction<ShortenedURL[]>) => {
+        return (state = action.payload);
+      }
+    );
+    builder.addMatcher(
+      urlApi.endpoints.deleteShortUrl.matchFulfilled,
+      (state, action: PayloadAction<{ id: number }>) => {
+        return state.filter((url) => url.id !== action.payload.id);
+      }
+    );
   },
 });
 

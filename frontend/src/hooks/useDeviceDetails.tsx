@@ -95,7 +95,6 @@ const useDeviceDetails = (): DeviceDetails => {
         async (position) => {
           const { latitude, longitude } = position.coords;
           const getWeatherData = await getUserLocation(latitude, longitude);
-          console.log("weather", getWeatherData);
           setDeviceDetails((prevDetails) => ({
             ...prevDetails,
             location: {

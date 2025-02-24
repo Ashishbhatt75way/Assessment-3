@@ -27,7 +27,7 @@ export default function Authanticated() {
             UrlShort
           </button>
 
-          <div className="flex gap-10 items-center font-medium tracking-wide leading-6 pl-44">
+          <div className="flex gap-10 items-center font-medium tracking-wide leading-6 justify-center">
             <NavLink
               to={"/"}
               className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"

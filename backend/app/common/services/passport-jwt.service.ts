@@ -7,7 +7,9 @@ import { ExtractJwt, Strategy } from "passport-jwt";
 import { Strategy as LocalStrategy } from "passport-local";
 import { type IUser } from "../../user/user.dto";
 import * as userService from "../../user/user.service";
+import { config } from "dotenv";
 
+config();
 const isValidPassword = async function (value: string, password: string) {
   const compare = await bcrypt.compare(value, password);
   return compare;

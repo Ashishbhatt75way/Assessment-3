@@ -1,31 +1,28 @@
-import { Trash2 } from "lucide-react"; // Delete icon
+import { Trash2 } from "lucide-react";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import {
   useDeleteShortUrlMutation,
   useGetShortUrlsQuery,
 } from "../../services/urlApi";
 
-interface Props {
-  urls: ShortenedURL[];
-}
-
-const UrlTable: React.FC<Props> = ({ urls }) => {
-  const [urlList] = useState<ShortenedURL[]>(urls);
+const UrlTable: React.FC = () => {
+  const { data, refetch } = useGetShortUrlsQuery();
   const [currentPage, setCurrentPage] = useState(1);
-  const { refetch } = useGetShortUrlsQuery();
   const itemsPerPage = 5;
-  const totalPages = Math.ceil(urlList.length / itemsPerPage);
+  const totalPages = Math.ceil((data?.length || 0) / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const paginatedUrls = urlList.slice(startIndex, startIndex + itemsPerPage);
+  const paginatedUrls = (data || []).slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
   const [deleteShortUrl] = useDeleteShortUrlMutation();
 
   const handleDelete = async (id: number) => {
     try {
       await deleteShortUrl(id).unwrap();
       toast.success("URL deleted successfully");
-      refetch();
+      refetch(); // Refetch data after deletion
     } catch (error) {
       toast.error("Failed to delete URL");
       console.log(error);

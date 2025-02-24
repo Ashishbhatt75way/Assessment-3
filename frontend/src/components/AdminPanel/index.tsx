@@ -126,7 +126,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            {data && <UrlTable urls={data} />}
+            {data && <UrlTable />}
           </div>
         </div>
       </div>

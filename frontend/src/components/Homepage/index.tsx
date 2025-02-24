@@ -1,4 +1,4 @@
-import { ArrowRight } from "@mui/icons-material";
+import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 
@@ -33,10 +33,9 @@ const Hero = () => {
             }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="text-[70px] pointer-events-none text-center font-bold"
+            className="text-[80px] leading-[96px] mt-12 bg-clip-text text-transparent bg-gradient-to-br from-[#eeeeee] to-[#e1e1e1] pointer-events-none text-center font-bold"
           >
-            🔗 Shorten URLs Instantly <br />
-            📊 Track Clicks & Performance 🎨 Customize & Brand Links
+            AI-Powered URL Shortener Secure, Smart, and Instant
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -44,8 +43,8 @@ const Hero = () => {
             transition={{ duration: 0.4, delay: 1.2 }}
             className="text-lg mt-12 text-center px-28 font-medium pointer-events-none text-[#a9a9a9]"
           >
-            Experience the future of web design with stunning animations,
-            seamless interactions, and a user-friendly experience.
+            Not just another URL shortener—our AI-powered system ensures every
+            link you create is safe, reliable, and secure.
           </motion.p>
           <div className="flex items-center relative justify-center mt-4 h-20 gap-16">
             <div className="flex items-center relative justify-center h-12 w-full">

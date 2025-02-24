@@ -84,9 +84,9 @@ const GenerateQR: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black flex pt-32 justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-8xl font-bold text-center text-white mb-8">
+        <h1 className="text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 to-neutral-400 outline-none antialiased mb-8">
           URL Shortener & QR Code Generator
         </h1>
 
@@ -118,7 +118,7 @@ const GenerateQR: React.FC = () => {
         </form>
 
         {urlData && (
-          <div className="bg-white rounded-xl shadow-lg p-6 mt-6">
+          <div className="bg-neutral-50 max-w-xl mx-auto flex flex-col items-center rounded-xl shadow-lg p-6 mt-6">
             <h2 className="text-3xl text-center font-semibold text-gray-900 mb-4">
               Generated QR Code
             </h2>
@@ -146,7 +146,7 @@ const GenerateQR: React.FC = () => {
         )}
 
         {snackbarOpen && (
-          <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg">
+          <div className="fixed bottom-4 left-1/2 text-sm transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg">
             Copied to clipboard
           </div>
         )}

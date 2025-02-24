@@ -11,7 +11,7 @@ export const urlApi = createApi({
       query: () => "/urls",
       providesTags: ["Url"],
     }),
-    createShortUrl: builder.mutation<any, Partial<any>>({
+    createShortUrl: builder.mutation<ShortenedURL, ShortenedURL>({
       query: (newUrl) => ({
         url: "/urls",
         method: "POST",
@@ -19,7 +19,7 @@ export const urlApi = createApi({
       }),
       invalidatesTags: ["Url"],
     }),
-    deleteShortUrl: builder.mutation<void, number>({
+    deleteShortUrl: builder.mutation<{ id: number }, number>({
       query: (id) => ({
         url: `/urls/${id}`,
         method: "DELETE",

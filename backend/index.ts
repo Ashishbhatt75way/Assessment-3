@@ -11,7 +11,6 @@ import { initDB } from "./app/common/services/database.service";
 import { initPassport } from "./app/common/services/passport-jwt.service";
 import routes from "./app/routes";
 import { type IUser } from "./app/user/user.dto";
-import fs from "fs";
 
 loadConfig();
 

@@ -27,7 +27,7 @@ interface AnalyticsData {
 }
 
 interface ShortenedURL {
-  id: number;
+  id?: number;
   originalUrl: string;
   shortCode: string;
   shortUrl: string;
