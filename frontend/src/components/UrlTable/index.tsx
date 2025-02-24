@@ -22,10 +22,9 @@ const UrlTable: React.FC = () => {
     try {
       await deleteShortUrl(id).unwrap();
       toast.success("URL deleted successfully");
-      refetch(); // Refetch data after deletion
+      refetch();
     } catch (error) {
       toast.error("Failed to delete URL");
-      console.log(error);
     }
   };
 
