@@ -1,87 +1,18 @@
-"use client";
-
-import {
-  ChevronRight,
-  Contact2Icon,
-  DollarSign,
-  HelpCircle,
-  LayoutDashboard,
-  ListOrdered,
-  PackageSearch,
-  TicketPercent,
-  UsersRound,
-} from "lucide-react";
-import { NavLink } from "react-router-dom";
-import UrlTable from "../UrlTable";
-import { useGetShortUrlsQuery } from "../../services/urlApi";
+import { ListOrdered, UsersRound } from "lucide-react";
 import { useMeQuery } from "../../services/api";
+import { useGetShortUrlsQuery } from "../../services/urlApi";
+import UrlTable from "../UrlTable";
 
 const Page = () => {
   const { data } = useGetShortUrlsQuery();
   const { data: user } = useMeQuery();
 
   return (
-    <div className="w-full  pt-[80px]">
-      <section className="w-[20%] flex flex-col  items-center h-screen p-5 gap-3 fixed border-r-[.5px] border-[#fff]/20">
-        <div className="flex flex-col  gap-10 w-full items-center mt-6">
-          <div>
-            <h1 className="text-4xl text-white  font-bold">URL Analytics</h1>
-          </div>
-
-          <div className="flex flex-col gap-2 w-5/6 text-sm justify-center mt-8">
-            <div>
-              <div className="p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f] hover:text-black transition-all">
-                <LayoutDashboard size={20} />
-                <NavLink to="/panel">Dashboard</NavLink>
-                <ChevronRight size={20} />
-              </div>
-              <div className="p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
-                <PackageSearch size={20} />
-                <NavLink to="/analytics">Analytics</NavLink>
-                <ChevronRight size={20} />
-              </div>
-              <div className="p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
-                <Contact2Icon size={20} />
-                <NavLink to="/panel">Customers</NavLink>
-                <ChevronRight size={20} />
-              </div>
-              <div className=" p-5 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
-                <DollarSign size={20} />
-                <NavLink to="/panel">Earnings</NavLink>
-                <ChevronRight size={20} />
-              </div>
-              <div className=" p-5 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
-                <TicketPercent size={20} />
-                <NavLink to="/panel">Offers</NavLink>
-                <ChevronRight size={20} />
-              </div>
-              <div className=" p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black  transition-all">
-                <HelpCircle size={20} />
-                <NavLink to="/panel">Help</NavLink>
-                <ChevronRight size={20} />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2 w-5/6 mt-8">
-            <div className="flex items-center gap-5 justify-start">
-              <div className="rounded-[100%] w-[50px] text-white text-3xl flex items-center justify-center border h-[50px]">
-                <h3>{user?.data.name[0]}</h3>
-              </div>
-              <div>
-                <h2 className="font-bold text-xl text-[#dbff6e]">
-                  {user?.data.name}
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <div className="w-full">
       <div className="w-[80%] h-full bg-black absolute right-0">
         <div className="w-full h-full bg-black flex flex-col">
           <div className="p-10 flex items-center bg-black justify-between gap-5">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center ml-6">
               <h2 className="text-4xl font-bold">
                 Hi <span className="text-[#dbff6e]">{user?.data.name} 👋</span>,
               </h2>

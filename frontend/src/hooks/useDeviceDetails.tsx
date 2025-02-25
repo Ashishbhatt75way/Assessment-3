@@ -28,7 +28,7 @@ const useDeviceDetails = (): DeviceDetails => {
     let browser = "Unknown";
 
     if (userAgent.indexOf("Firefox") > -1) {
-      browser = "Mozilla Firefox";
+      browser = "firefox";
     } else if (userAgent.indexOf("SamsungBrowser") > -1) {
       browser = "Samsung Internet";
     } else if (
@@ -39,11 +39,11 @@ const useDeviceDetails = (): DeviceDetails => {
     } else if (userAgent.indexOf("Trident") > -1) {
       browser = "Microsoft Internet Explorer";
     } else if (userAgent.indexOf("Edge") > -1) {
-      browser = "Microsoft Edge";
+      browser = "edge";
     } else if (userAgent.indexOf("Chrome") > -1) {
-      browser = "Google Chrome";
+      browser = "chrome";
     } else if (userAgent.indexOf("Safari") > -1) {
-      browser = "Apple Safari";
+      browser = "safari";
     }
 
     return browser;

@@ -31,10 +31,19 @@ const useGetBrowserData = (): UseGetBrowserDataResult => {
       return acc;
     }, {});
 
+  const chartDataColor = [
+    "var(--color-chrome)",
+    "var(--color-safari)",
+    "var(--color-firefox)",
+    "var(--color-edge)",
+    "var(--color-other)",
+  ];
+
   const chartData = Object.entries(browserCounts).map(
     ([browser, visitors]) => ({
       browser,
       visitors,
+      fill: chartDataColor[Math.floor(Math.random() * chartDataColor.length)],
     })
   );
 

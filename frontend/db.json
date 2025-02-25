@@ -12,7 +12,7 @@
         {
           "date": "2025-02-25",
           "location": "Radaur, Haryana, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -29,7 +29,7 @@
         {
           "date": "2025-02-25",
           "location": "Radaur, Haryana, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -97,7 +97,7 @@
         {
           "date": "2025-02-25",
           "location": "Radaur, Haryana, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -114,7 +114,7 @@
         {
           "date": "2025-02-25",
           "location": "Radaur, Haryana, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -131,7 +131,7 @@
         {
           "date": "2025-02-25",
           "location": "Radaur, Haryana, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -148,7 +148,7 @@
         {
           "date": "2025-2-25",
           "location": "Kharar, Punjab, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -165,7 +165,7 @@
         {
           "date": "2025-2-25",
           "location": "Chandigarh, Chandigarh, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
@@ -182,7 +182,41 @@
         {
           "date": "2025-2-25",
           "location": "Chandigarh, Chandigarh, India",
-          "browser": "Google Chrome",
+          "browser": "chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "ce9j4e",
+      "originalUrl": "https://web3.career/",
+      "shortCode": "3sl6ly",
+      "shortUrl": "http://localhost:5000/s6155a",
+      "expiresAt": "2025-02-27T11:52:17.041Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-25",
+          "location": "Chandigarh, Chandigarh, India",
+          "browser": "chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "yqmkry",
+      "originalUrl": "https://web3.career/",
+      "shortCode": "tdaygq",
+      "shortUrl": "http://localhost:5000/bprs7f",
+      "expiresAt": "2025-02-27T12:51:24.941Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-25",
+          "location": "Chandigarh, Chandigarh, India",
+          "browser": "chrome",
           "device": "Windows"
         }
       ]
