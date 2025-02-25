@@ -137,23 +137,6 @@
       ]
     },
     {
-      "id": "983dci",
-      "originalUrl": "https://ui.shadcn.com/docs/",
-      "shortCode": "qp5g0h",
-      "shortUrl": "http://localhost:5000/qhktx8",
-      "expiresAt": "2025-02-27T07:31:38.317Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://ui.shadcn.com/docs/",
-      "clicks": 0,
-      "analytics": [
-        {
-          "date": "2025-2-25",
-          "location": "Kharar, Punjab, India",
-          "browser": "Google Chrome",
-          "device": "Android"
-        }
-      ]
-    },
-    {
       "id": "f4orj2",
       "originalUrl": "https://in.investing.com/indices/",
       "shortCode": "j2ntn2",
@@ -165,6 +148,40 @@
         {
           "date": "2025-2-25",
           "location": "Kharar, Punjab, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "iix6d0",
+      "originalUrl": "https://web3.career/",
+      "shortCode": "a64baf",
+      "shortUrl": "http://localhost:5000/jcw6x6",
+      "expiresAt": "2025-02-27T09:50:46.433Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-25",
+          "location": "Chandigarh, Chandigarh, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "rexyh8",
+      "originalUrl": "https://updraft.cyfrin.io/courses",
+      "shortCode": "c7vpwq",
+      "shortUrl": "http://localhost:5000/zueq3z",
+      "expiresAt": "2025-02-27T10:33:15.075Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://updraft.cyfrin.io/courses",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-25",
+          "location": "Chandigarh, Chandigarh, India",
           "browser": "Google Chrome",
           "device": "Windows"
         }

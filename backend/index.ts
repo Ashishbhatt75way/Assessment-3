@@ -11,7 +11,7 @@ import { initDB } from "./app/common/services/database.service";
 import { initPassport } from "./app/common/services/passport-jwt.service";
 import routes from "./app/routes";
 import { type IUser } from "./app/user/user.dto";
-import { loadModel } from "./app/ai-Model/model.services";
+import { loadModel } from "./app/ai-model/model.services";
 
 loadConfig();
 
@@ -34,8 +34,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(morgan("dev"));
-
-// Load JSON Data
 
 const initApp = async (): Promise<void> => {
   // init mongodb

@@ -36,14 +36,14 @@ const GenerateQR: React.FC = () => {
 
   const handleUrlSubmit = async (data: FormData) => {
     try {
-      // const prediction = await predictUrl(data.url);
+      const prediction = await predictUrl(data.url);
 
-      // if (prediction.data !== "benign") {
-      //   toast.error(
-      //     `This URL is ${prediction.data.data}!. Please try again with valid email.`
-      //   );
-      //   return;
-      // }
+      if (prediction.data.data !== "benign") {
+        toast.error(
+          `This URL is ${prediction.data.data}!. Please try again with valid email.`
+        );
+        return;
+      }
 
       const date = `${new Date().getFullYear()}-${
         new Date().getMonth() + 1

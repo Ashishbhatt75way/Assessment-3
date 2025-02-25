@@ -1,4 +1,3 @@
-import { TrendingUp } from "lucide-react";
 import { Label, Pie, PieChart } from "recharts";
 
 import {
@@ -15,6 +14,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import useGetBrowserData from "@/hooks/useGetBrowserData";
 import { useGetShortUrlsQuery } from "@/services/urlApi";
 
 const chartConfig = {
@@ -22,7 +22,7 @@ const chartConfig = {
     label: "Visitors",
   },
   chrome: {
-    label: "Chrome",
+    label: "Google Chrome",
     color: "hsl(var(--chart-1))",
   },
   safari: {
@@ -30,7 +30,7 @@ const chartConfig = {
     color: "hsl(var(--chart-2))",
   },
   firefox: {
-    label: "Firefox",
+    label: "firefox",
     color: "hsl(var(--chart-3))",
   },
   edge: {
@@ -44,27 +44,8 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 const index = () => {
-  const { data } = useGetShortUrlsQuery();
-  console.log(data);
-
-  if (!data) return null;
-
-  // Extract browsers and count occurrences
-  const browserCounts = data
-    .flatMap((item) => item.analytics.map((items) => items.browser))
-    .reduce((acc, browser) => {
-      acc[browser] = (acc[browser] || 0) + 1;
-      return acc;
-    }, {});
-
-  const chartData = Object.entries(browserCounts).map(
-    ([browser, visitors]) => ({
-      browser,
-      visitors,
-    })
-  );
-
-  const totalVisitors = data.length;
+  const { data: chartData } = useGetBrowserData();
+  const { data: urlData } = useGetShortUrlsQuery();
 
   return (
     <Card className="flex flex-col">
@@ -104,14 +85,14 @@ const index = () => {
                           y={viewBox.cy}
                           className="fill-foreground text-3xl font-bold"
                         >
-                          {totalVisitors.toLocaleString()}
+                          {urlData?.length}
                         </tspan>
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          Visitors
+                          Live Links
                         </tspan>
                       </text>
                     );
@@ -123,9 +104,6 @@ const index = () => {
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
         <div className="leading-none text-muted-foreground">
           Showing total links opened on a browser.
         </div>
