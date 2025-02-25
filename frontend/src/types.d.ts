@@ -36,3 +36,22 @@ interface ShortenedURL {
   expiresAt: string;
   qrCode: string;
 }
+
+interface AnalyticsItem {
+  browser: string;
+}
+
+interface ShortUrl {
+  analytics: AnalyticsItem[];
+}
+
+interface BrowserData {
+  browser: string;
+  visitors: number;
+}
+
+interface UseGetBrowserDataResult {
+  data: BrowserData[];
+  isLoading: boolean;
+  error: unknown;
+}

@@ -1,24 +1,5 @@
 import { useGetShortUrlsQuery } from "@/services/urlApi";
 
-interface AnalyticsItem {
-  browser: string;
-}
-
-interface ShortUrl {
-  analytics: AnalyticsItem[];
-}
-
-interface BrowserData {
-  browser: string;
-  visitors: number;
-}
-
-interface UseGetBrowserDataResult {
-  data: BrowserData[];
-  isLoading: boolean;
-  error: unknown;
-}
-
 const useGetBrowserData = (): UseGetBrowserDataResult => {
   const { data, isLoading, error } = useGetShortUrlsQuery();
 

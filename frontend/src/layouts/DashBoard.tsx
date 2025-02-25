@@ -7,8 +7,8 @@ const DashBoard = () => {
   const { data: user } = useMeQuery();
 
   return (
-    <div className="w-full pt-20">
-      <section className="w-[20%] flex flex-col  items-center h-screen p-5 gap-3 fixed border-r-[.5px] border-[#fff]/20">
+    <div className="w-full pt-20 flex ">
+      <section className="w-[20%] flex flex-col items-center h-screen p-5 gap-3 fixed border-r-[.5px] border-[#fff]/20">
         <div className="flex flex-col  gap-10 w-full items-center mt-6">
           <div>
             <h1 className="text-4xl text-white font-bold">Dashboard</h1>
@@ -42,9 +42,9 @@ const DashBoard = () => {
           </div>
         </div>
       </section>
-      <div className="w-full flex items-center justify-center">
+      <section className="w-[80%] flex items-center justify-center">
         <Outlet />
-      </div>
+      </section>
     </div>
   );
 };
