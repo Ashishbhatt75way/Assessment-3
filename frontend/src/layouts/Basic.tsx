@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../store/store";
 
 function Basic() {
@@ -15,7 +15,10 @@ function Basic() {
     <>
       <div className="navbar p-5 w-full text-slate-300 border-b-[1px] fixed z-[100] border-[#fff]/20">
         <div className="flex items-center justify-between mx-auto px-20">
-          <div>URL</div>
+          <button className="flex items-center gap-2 cursor-pointer">
+            <img src="/logo.png" alt="logo" className="w-7 h-7" />
+            <span className="text-2xl font-bold">URL Shortener</span>
+          </button>
 
           <div className="flex gap-4">
             <button

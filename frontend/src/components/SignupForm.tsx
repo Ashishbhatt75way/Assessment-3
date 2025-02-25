@@ -6,9 +6,10 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import * as yup from "yup";
 import { useRegisterMutation } from "../services/api";
+import { motion } from "motion/react";
 
 const validation = yup.object().shape({
-  name: yup.string().required("name is required"),
+  name: yup.string().required("Name is required"),
   email: yup
     .string()
     .email("Invalid email format")
@@ -53,13 +54,18 @@ const SignUpPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-black flex pt-20 justify-center">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="w-full h-screen bg-black flex pt-20 justify-center"
+    >
       <div className="w-2/3 rounded-2xl h-3/4 ">
         <div className="flex flex-col">
-          <h1 className="text-5xl font-medium text-[#dbff6e] text-center mt-16">
+          <h1 className="text-6xl text-neutral-100 font-bold text-center mt-16">
             Sign Up
           </h1>
-          <p className="text-lg font-light leading-1 tracking-wide text-slate-100/40 mt-4 text-center">
+          <p className="text-lg font-light leading-1 px-48 tracking-wide text-slate-100/40 mt-6 text-center">
             Join our community today! Create an account to unlock exclusive
             features and personalized experiences.
           </p>
@@ -78,7 +84,7 @@ const SignUpPage: React.FC = () => {
                     errors.name ? "border-red-500" : ""
                   }`}
                 />
-                <p className="text-red-500 text-sm text-left">
+                <p className="text-red-500 text-sm text-center mt-1">
                   {errors.name?.message}
                 </p>
               </div>
@@ -92,7 +98,7 @@ const SignUpPage: React.FC = () => {
                     errors.email ? "border-red-500" : ""
                   }`}
                 />
-                <p className="text-red-500 text-sm text-left">
+                <p className="text-red-500 text-sm text-center mt-1">
                   {errors.email?.message}
                 </p>
               </div>
@@ -108,7 +114,7 @@ const SignUpPage: React.FC = () => {
                     errors.password ? "border-red-500" : ""
                   }`}
                 />
-                <p className="text-red-500 text-sm text-left">
+                <p className="text-red-500 text-sm text-center mt-1">
                   {errors.password?.message}
                 </p>
               </div>
@@ -122,7 +128,7 @@ const SignUpPage: React.FC = () => {
                     errors.confirmPassword ? "border-red-500" : ""
                   }`}
                 />
-                <p className="text-red-500 text-sm text-left">
+                <p className="text-red-500 text-sm text-center mt-1">
                   {errors.confirmPassword?.message}
                 </p>
               </div>
@@ -138,7 +144,7 @@ const SignUpPage: React.FC = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

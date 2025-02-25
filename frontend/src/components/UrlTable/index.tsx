@@ -1,4 +1,5 @@
 import { Trash2 } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import {
@@ -18,10 +19,11 @@ const UrlTable: React.FC = () => {
   );
   const [deleteShortUrl] = useDeleteShortUrlMutation();
 
-  const handleDelete = async (id: number) => {
+  const handleDelete = async (id: string) => {
     try {
       await deleteShortUrl(id).unwrap();
       toast.success("URL deleted successfully");
+
       refetch();
     } catch (error) {
       toast.error("Failed to delete URL");
@@ -29,69 +31,101 @@ const UrlTable: React.FC = () => {
   };
 
   return (
-    <div className="text-white pt-12 rounded-xl shadow-md">
+    <div className="text-white pt-12 shadow-md min-w-[1120px]">
       <h2 className="font-bold text-2xl">Shortened URLs</h2>
       <p className="text-[#a1a1aa]">Manage your active URLs</p>
 
-      <div className="overflow-x-auto mt-4">
-        <table className="w-full border border-neutral-800 rounded-lg">
-          <thead className="bg-neutral-800 text-white">
-            <tr>
-              <th className="px-4 py-3 text-left w-40 whitespace-nowrap">
-                Short URL
-              </th>
-              <th className="px-4 py-3 text-left w-80 whitespace-nowrap">
-                Original URL
-              </th>
-              <th className="px-4 py-3 text-left w-20">Clicks</th>
-              <th className="px-4 py-3 text-left w-40">Expires At</th>
-              <th className="px-4 py-3 text-left w-60">Recent Analytics</th>
-              <th className="px-4 py-3 text-left w-20">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {paginatedUrls.map((url, index) => (
-              <tr
-                key={index}
-                className="border-b border-gray-700 hover:bg-gray-800/10"
-              >
-                <td className="px-4 py-4 w-40 whitespace-nowrap">
-                  <a
-                    href={url.shortUrl}
-                    target="_blank"
-                    className="text-gray-400 text-xs hover:underline"
-                  >
-                    {url.shortUrl}
-                  </a>
-                </td>
-                <td className="px-4 py-4 text-gray-300 truncate text-xs max-w-[200px] overflow-hidden text-ellipsis">
-                  {url.originalUrl}
-                </td>
-                <td className="px-4 text-gray-300 text-xs py-4 w-20 text-center">
-                  {url.clicks}
-                </td>
-                <td className="px-4 text-gray-300 text-xs py-4 w-40 whitespace-nowrap">
-                  {new Date(url.expiresAt).toLocaleString()}
-                </td>
-                <td className="px-4 py-4 text-xs max-w-24 text-gray-500 w-60 overflow-hidden truncate text-ellipsis">
-                  {url.analytics.slice(0, 2).map((entry, i) => (
-                    <div key={i} className="text-wrap">
-                      {entry.timestamp} - {entry.browser} ({entry.device}) from{" "}
-                      {entry.location}
-                    </div>
-                  ))}
-                </td>
-                <td className="px-4 py-4 w-20">
-                  <button
-                    onClick={() => handleDelete(url.id)}
-                    className="text-red-500 flex items-center justify-center hover:text-red-700 transition"
-                  >
-                    <Trash2 size={18} />
-                  </button>
-                </td>
+      <div className="overflow-x-auto h-[500px] mt-4">
+        <table className="w-full border bg-neutral-900/15 rounded-2xl">
+          <AnimatePresence>
+            <thead className="bg-neutral-900/80 text-white ">
+              <tr>
+                <th className="px-4 py-3 text-left w-40 whitespace-nowrap">
+                  Short URL
+                </th>
+                <th className="px-4 py-3 text-left w-64 whitespace-nowrap">
+                  Original URL
+                </th>
+                <th className="px-4 py-3 text-left w-20">Clicks</th>
+                <th className="px-4 py-3 text-left w-40">Expires At</th>
+                <th className="px-4 py-3 text-left w-80">Recent Analytics</th>
+                <th className="px-4 py-3 text-left w-20">Actions</th>
               </tr>
-            ))}
-          </tbody>
+            </thead>
+
+            <tbody>
+              {paginatedUrls.map((url) => (
+                <motion.tr
+                  key={url.id}
+                  className="border-b border-gray-700 hover:bg-gray-800/10"
+                >
+                  <motion.td
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="px-4 py-4 w-40 whitespace-nowrap"
+                  >
+                    <a
+                      href={url.shortUrl}
+                      target="_blank"
+                      className="text-gray-400 text-xs hover:underline"
+                    >
+                      {url.shortUrl}
+                    </a>
+                  </motion.td>
+                  <motion.td
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="px-4 py-4 text-gray-300 truncate text-xs max-w-[200px] overflow-hidden text-ellipsis"
+                  >
+                    {url.originalUrl}
+                  </motion.td>
+                  <motion.td
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="px-4 text-gray-300 text-xs py-4 w-20 text-center"
+                  >
+                    {url.clicks}
+                  </motion.td>
+                  <motion.td
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="px-4 text-gray-300 text-xs py-4 w-40 whitespace-nowrap"
+                  >
+                    {new Date(url.expiresAt).toLocaleString()}
+                  </motion.td>
+                  <motion.td
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="px-4 py-4 text-xs max-w-24 text-gray-500 w-60 overflow-hidden truncate text-ellipsis"
+                  >
+                    {url.analytics &&
+                      url.analytics.slice(0, 2).map((entry, i) => (
+                        <div key={i} className="text-wrap">
+                          Date : {entry.date}
+                          <br />
+                          {entry.browser} ({entry.device}) from {entry.location}
+                        </div>
+                      ))}
+                  </motion.td>
+                  <td className="px-4 py-4 w-20">
+                    <button
+                      onClick={() => {
+                        if (url.id) handleDelete(url.id);
+                      }}
+                      className="text-red-500 flex items-center justify-center hover:text-red-700 transition"
+                    >
+                      <Trash2 size={18} />
+                    </button>
+                  </td>
+                </motion.tr>
+              ))}
+            </tbody>
+          </AnimatePresence>
         </table>
       </div>
 

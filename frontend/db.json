@@ -1,51 +1,170 @@
 {
   "urls": [
     {
-      "id": "eb16",
-      "originalUrl": "https://www.tensorflow.org/js/tutorials/setup#option_3_install_the_pure_javascript_version",
-      "shortCode": "9964xu",
-      "shortUrl": "http://localhost:5000/rs2jb1",
-      "expiresAt": "2025-02-26T08:12:58.761Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.tensorflow.org/js/tutorials/setup#option_3_install_the_pure_javascript_version",
-      "clicks": 0,
+      "id": "sb4dnh",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "1jfq4p",
+      "shortUrl": "http://localhost:5000/7d0ad2",
+      "expiresAt": "2025-02-27T05:34:11.220Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 3,
       "analytics": [
         {
-          "timestamp": "2025-02-24T08:12:58.761Z",
-          "location": null,
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
           "browser": "Google Chrome",
           "device": "Windows"
         }
       ]
     },
     {
-      "id": "67ff",
-      "originalUrl": "https://github.com/BrainJS/brain.js?tab=readme-ov-file#NPM",
-      "shortCode": "15x1ao",
-      "shortUrl": "http://localhost:5000/bgjm3w",
-      "expiresAt": "2025-02-26T10:05:02.372Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://github.com/BrainJS/brain.js?tab=readme-ov-file#NPM",
-      "clicks": 0,
+      "id": "wmr83g",
+      "originalUrl": "https://tailwindui.com/templates",
+      "shortCode": "vmh29b",
+      "shortUrl": "http://localhost:5000/xd5x5l",
+      "expiresAt": "2025-02-27T05:40:37.581Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://tailwindui.com/templates",
+      "clicks": 8,
       "analytics": [
         {
-          "timestamp": "2025-02-24T10:05:02.372Z",
-          "location": null,
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
           "browser": "Google Chrome",
           "device": "Windows"
         }
       ]
     },
     {
-      "id": "ffb5",
-      "originalUrl": "https://github.com/Ashishbhatt97?tab=repositories",
-      "shortCode": "slk8ni",
-      "shortUrl": "http://localhost:5000/0zhjlf",
-      "expiresAt": "2025-02-26T11:20:06.524Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://github.com/Ashishbhatt97?tab=repositories",
+      "id": "pemza4",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "lm8lo8",
+      "shortUrl": "http://localhost:5000/mu38s8",
+      "expiresAt": "2025-02-27T05:49:48.312Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 2,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "firefox",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "9z8pe8",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "l9dwh7",
+      "shortUrl": "http://localhost:5000/idhosa",
+      "expiresAt": "2025-02-27T05:50:03.178Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 10,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "firefox",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "3hinkp",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "qldctg",
+      "shortUrl": "http://localhost:5000/rus3gx",
+      "expiresAt": "2025-02-27T05:50:04.639Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 20,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "firefox",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "lyj11m",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "35eh2f",
+      "shortUrl": "http://localhost:5000/z5cha7",
+      "expiresAt": "2025-02-27T05:50:06.213Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 22,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "tehvjt",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "stxovo",
+      "shortUrl": "http://localhost:5000/7yhf6u",
+      "expiresAt": "2025-02-27T05:50:08.158Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 18,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "3udp9y",
+      "originalUrl": "https://www.weatherapi.com/my/",
+      "shortCode": "b84vat",
+      "shortUrl": "http://localhost:5000/711zz7",
+      "expiresAt": "2025-02-27T05:50:10.326Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
+      "clicks": 2,
+      "analytics": [
+        {
+          "date": "2025-02-25",
+          "location": "Radaur, Haryana, India",
+          "browser": "Google Chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "983dci",
+      "originalUrl": "https://ui.shadcn.com/docs/",
+      "shortCode": "qp5g0h",
+      "shortUrl": "http://localhost:5000/qhktx8",
+      "expiresAt": "2025-02-27T07:31:38.317Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://ui.shadcn.com/docs/",
       "clicks": 0,
       "analytics": [
         {
-          "timestamp": "2025-02-24T11:20:06.524Z",
-          "location": null,
+          "date": "2025-2-25",
+          "location": "Kharar, Punjab, India",
+          "browser": "Google Chrome",
+          "device": "Android"
+        }
+      ]
+    },
+    {
+      "id": "f4orj2",
+      "originalUrl": "https://in.investing.com/indices/",
+      "shortCode": "j2ntn2",
+      "shortUrl": "http://localhost:5000/6trd7g",
+      "expiresAt": "2025-02-27T07:37:02.298Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://in.investing.com/indices/",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-25",
+          "location": "Kharar, Punjab, India",
           "browser": "Google Chrome",
           "device": "Windows"
         }

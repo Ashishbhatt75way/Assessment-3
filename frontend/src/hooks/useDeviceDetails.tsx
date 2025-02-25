@@ -64,7 +64,6 @@ const useDeviceDetails = (): DeviceDetails => {
     } else if (/Linux/i.test(userAgent)) {
       device = "Linux";
     }
-
     return device;
   };
 
@@ -84,7 +83,6 @@ const useDeviceDetails = (): DeviceDetails => {
 
       return location;
     } catch (error) {
-      console.error("Error fetching weather data:", error);
       return null;
     }
   }

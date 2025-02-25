@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import { useLoginMutation } from "../services/api";
 import { toast } from "react-toastify";
+import { motion } from "motion/react";
 
 const validation = yup.object().shape({
   email: yup
@@ -47,10 +48,15 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen flex bg-black pt-20 justify-center">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="w-full h-screen flex bg-black pt-20 justify-center"
+    >
       <div className="w-2/3 rounded-2xl h-3/4 ">
         <div className="flex flex-col">
-          <h1 className="text-5xl font-medium text-[#dbff6e] text-center mt-16">
+          <h1 className="text-6xl font-bold text-neutral-100  text-center mt-16">
             Login
           </h1>
           <p className="text-lg font-light leading-1 tracking-wide text-slate-100/40 mt-4 text-center">
@@ -71,7 +77,7 @@ const LoginPage: React.FC = () => {
                     errors.email ? "border-red-500" : ""
                   }`}
                 />
-                <p className="text-red-500 text-sm text-left">
+                <p className="text-red-500 text-sm text-center mt-1">
                   {errors.email?.message}
                 </p>
               </div>
@@ -87,10 +93,10 @@ const LoginPage: React.FC = () => {
                       errors.password ? "border-red-500" : ""
                     }`}
                   />
-                  <p className="text-red-500 text-sm text-left">
+                  <p className="text-red-500 text-sm text-center mt-1">
                     {errors.password?.message}
                   </p>
-                </div>{" "}
+                </div>
               </div>
             </div>
             <div className="flex mt-28 gap-8">
@@ -104,7 +110,7 @@ const LoginPage: React.FC = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

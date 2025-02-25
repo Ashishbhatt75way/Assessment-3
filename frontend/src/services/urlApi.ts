@@ -11,7 +11,10 @@ export const urlApi = createApi({
       query: () => "/urls",
       providesTags: ["Url"],
     }),
-    createShortUrl: builder.mutation<ShortenedURL, ShortenedURL>({
+    createShortUrl: builder.mutation<
+      ShortenedURL,
+      Omit<ShortenedURL, "id" | "qrCode" | "analytics">
+    >({
       query: (newUrl) => ({
         url: "/urls",
         method: "POST",
@@ -19,7 +22,7 @@ export const urlApi = createApi({
       }),
       invalidatesTags: ["Url"],
     }),
-    deleteShortUrl: builder.mutation<{ id: number }, number>({
+    deleteShortUrl: builder.mutation<{ id: string }, string>({
       query: (id) => ({
         url: `/urls/${id}`,
         method: "DELETE",

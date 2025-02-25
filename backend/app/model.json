@@ -1,0 +1,85 @@
+{
+    "_events": {},
+    "_eventsCount": 0,
+    "classifier": {
+        "classFeatures": {
+            "benign": {
+                "0": 3,
+                "1": 2,
+                "2": 4,
+                "3": 2,
+                "4": 2
+            },
+            "phishing": {
+                "5": 2,
+                "6": 2,
+                "7": 2
+            },
+            "defacement": {
+                "0": 2,
+                "8": 2
+            }
+        },
+        "classTotals": {
+            "benign": 4,
+            "phishing": 2,
+            "defacement": 2
+        },
+        "totalExamples": 6,
+        "smoothing": 1
+    },
+    "docs": [
+        {
+            "label": "benign",
+            "text": [
+                "www",
+                "googl",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "www",
+                "amazon",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "facebook",
+                "com"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "alexpay2",
+                "beget",
+                "tech"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "artedesignsa"
+            ]
+        }
+    ],
+    "features": {
+        "www": 3,
+        "googl": 1,
+        "com": 3,
+        "amazon": 1,
+        "facebook": 1,
+        "alexpay2": 1,
+        "beget": 1,
+        "tech": 1,
+        "artedesignsa": 1
+    },
+    "stemmer": {},
+    "lastAdded": 5,
+    "Threads": null
+}

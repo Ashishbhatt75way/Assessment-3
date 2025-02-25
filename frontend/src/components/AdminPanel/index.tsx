@@ -21,13 +21,11 @@ const Page = () => {
   const { data: user } = useMeQuery();
 
   return (
-    <div className="w-full bg-black pt-[80px]">
-      <section className="w-[20%] flex flex-col bg-black items-center h-screen p-5 gap-3 fixed border-r-[.5px] border-[#fff]/20">
-        <div className="flex flex-col bg-black gap-10 w-full items-center mt-6">
+    <div className="w-full  pt-[80px]">
+      <section className="w-[20%] flex flex-col  items-center h-screen p-5 gap-3 fixed border-r-[.5px] border-[#fff]/20">
+        <div className="flex flex-col  gap-10 w-full items-center mt-6">
           <div>
-            <h1 className="text-4xl text-white bg-black font-bold">
-              URL Analytics
-            </h1>
+            <h1 className="text-4xl text-white  font-bold">URL Analytics</h1>
           </div>
 
           <div className="flex flex-col gap-2 w-5/6 text-sm justify-center mt-8">
@@ -39,7 +37,7 @@ const Page = () => {
               </div>
               <div className="p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
                 <PackageSearch size={20} />
-                <NavLink to="/panel">Products</NavLink>
+                <NavLink to="/analytics">Analytics</NavLink>
                 <ChevronRight size={20} />
               </div>
               <div className="p-4 rounded-2xl justify-between text-[#a1a1aa] flex items-center gap-5 cursor-pointer hover:bg-[#dbff6f]/95 hover:text-black transition-all ">
@@ -85,17 +83,13 @@ const Page = () => {
           <div className="p-10 flex items-center bg-black justify-between gap-5">
             <div className="flex items-center justify-center">
               <h2 className="text-4xl font-bold">
-                Hi.{" "}
-                <span className="text-[#dbff6e]">
-                  Hello, {user?.data.name} 👋
-                </span>
-                ,
+                Hi <span className="text-[#dbff6e]">{user?.data.name} 👋</span>,
               </h2>
             </div>
           </div>
 
-          <div className="w-full flex h-full bg-black pt-3 gap-2 items-center flex-col">
-            <div className="w-[90%] h-32 flex rounded-xl bg-neutral-200/15 py-8">
+          <div className="w-full flex h-full  pt-3 gap-2 items-center flex-col">
+            <div className="w-[90%] h-32 flex rounded-xl bg-neutral-600/15 py-8">
               <div className="w-1/2 h-full flex items-center justify-center border-r-[1px] border-[#a1a1aa]/20">
                 <div className="w-[70px] h-[70px] flex items-center justify-center  border-gray-300 border-2 rounded-[100%]">
                   <UsersRound size={26} className="text-green-500" />

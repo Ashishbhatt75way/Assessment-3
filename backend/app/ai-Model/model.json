@@ -1,0 +1,1521 @@
+{
+    "_events": {},
+    "_eventsCount": 0,
+    "classifier": {
+        "classFeatures": {
+            "phishing": {
+                "8": 2,
+                "9": 6,
+                "10": 2,
+                "18": 4,
+                "21": 2,
+                "41": 3,
+                "57": 2,
+                "61": 2,
+                "62": 2,
+                "63": 2,
+                "64": 2,
+                "65": 2,
+                "78": 2,
+                "115": 2,
+                "116": 2,
+                "188": 2,
+                "228": 2,
+                "245": 3,
+                "246": 3,
+                "247": 3,
+                "263": 2,
+                "264": 2,
+                "265": 2
+            },
+            "benign": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "6": 2,
+                "7": 2,
+                "9": 8,
+                "11": 2,
+                "12": 2,
+                "13": 2,
+                "14": 12,
+                "15": 2,
+                "16": 2,
+                "17": 4,
+                "18": 4,
+                "21": 2,
+                "22": 2,
+                "23": 2,
+                "24": 2,
+                "25": 2,
+                "26": 2,
+                "27": 2,
+                "28": 9,
+                "29": 2,
+                "31": 2,
+                "32": 2,
+                "33": 2,
+                "34": 2,
+                "35": 3,
+                "38": 2,
+                "39": 2,
+                "45": 2,
+                "46": 2,
+                "47": 2,
+                "48": 2,
+                "49": 2,
+                "50": 2,
+                "51": 2,
+                "52": 2,
+                "53": 2,
+                "54": 4,
+                "55": 2,
+                "58": 2,
+                "59": 2,
+                "60": 2,
+                "66": 2,
+                "67": 2,
+                "68": 2,
+                "69": 2,
+                "70": 2,
+                "71": 2,
+                "72": 2,
+                "73": 2,
+                "74": 3,
+                "75": 2,
+                "76": 2,
+                "77": 2,
+                "79": 3,
+                "80": 3,
+                "81": 2,
+                "82": 2,
+                "83": 2,
+                "84": 2,
+                "85": 2,
+                "86": 2,
+                "87": 2,
+                "88": 2,
+                "89": 2,
+                "90": 2,
+                "91": 2,
+                "92": 2,
+                "93": 2,
+                "94": 2,
+                "95": 2,
+                "96": 2,
+                "97": 2,
+                "98": 2,
+                "99": 2,
+                "100": 2,
+                "101": 2,
+                "102": 2,
+                "103": 2,
+                "104": 2,
+                "106": 2,
+                "107": 3,
+                "108": 2,
+                "109": 2,
+                "110": 2,
+                "111": 3,
+                "112": 2,
+                "113": 2,
+                "116": 2,
+                "117": 2,
+                "118": 3,
+                "119": 2,
+                "120": 2,
+                "121": 2,
+                "122": 3,
+                "123": 2,
+                "124": 2,
+                "125": 2,
+                "126": 2,
+                "127": 2,
+                "129": 2,
+                "130": 2,
+                "131": 2,
+                "132": 2,
+                "133": 2,
+                "137": 2,
+                "138": 2,
+                "139": 2,
+                "140": 2,
+                "141": 2,
+                "142": 2,
+                "143": 2,
+                "144": 2,
+                "145": 2,
+                "146": 2,
+                "147": 2,
+                "148": 2,
+                "149": 2,
+                "150": 2,
+                "151": 2,
+                "152": 2,
+                "153": 2,
+                "154": 2,
+                "155": 2,
+                "156": 2,
+                "157": 2,
+                "158": 2,
+                "159": 2,
+                "160": 2,
+                "161": 2,
+                "162": 2,
+                "163": 2,
+                "164": 2,
+                "165": 2,
+                "169": 2,
+                "170": 2,
+                "171": 2,
+                "172": 2,
+                "173": 2,
+                "174": 3,
+                "177": 2,
+                "178": 2,
+                "179": 2,
+                "181": 2,
+                "182": 2,
+                "183": 2,
+                "184": 2,
+                "185": 2,
+                "186": 2,
+                "187": 2,
+                "189": 2,
+                "190": 2,
+                "191": 2,
+                "192": 2,
+                "193": 2,
+                "194": 2,
+                "195": 2,
+                "196": 2,
+                "197": 2,
+                "198": 2,
+                "199": 2,
+                "200": 2,
+                "201": 2,
+                "202": 2,
+                "203": 2,
+                "204": 2,
+                "205": 2,
+                "206": 2,
+                "207": 2,
+                "208": 2,
+                "209": 2,
+                "210": 2,
+                "211": 2,
+                "213": 2,
+                "214": 2,
+                "215": 2,
+                "216": 2,
+                "217": 2,
+                "218": 2,
+                "219": 2,
+                "220": 2,
+                "221": 2,
+                "222": 2,
+                "223": 2,
+                "224": 2,
+                "225": 2,
+                "229": 2,
+                "230": 2,
+                "231": 2,
+                "232": 2,
+                "233": 2,
+                "236": 2,
+                "237": 2,
+                "238": 2,
+                "239": 2,
+                "240": 2,
+                "241": 2,
+                "242": 2,
+                "243": 2,
+                "244": 2,
+                "248": 2,
+                "249": 2,
+                "251": 2,
+                "252": 2,
+                "253": 2,
+                "255": 2,
+                "256": 2,
+                "258": 2,
+                "259": 2,
+                "260": 2,
+                "263": 2,
+                "266": 2,
+                "267": 2,
+                "268": 2
+            },
+            "defacement": {
+                "9": 12,
+                "10": 4,
+                "18": 22,
+                "19": 2,
+                "20": 2,
+                "21": 2,
+                "30": 2,
+                "36": 2,
+                "37": 3,
+                "40": 2,
+                "41": 3,
+                "42": 2,
+                "43": 2,
+                "44": 2,
+                "53": 2,
+                "56": 2,
+                "57": 2,
+                "105": 2,
+                "114": 2,
+                "128": 2,
+                "134": 2,
+                "135": 2,
+                "136": 2,
+                "166": 2,
+                "167": 2,
+                "168": 2,
+                "175": 2,
+                "176": 2,
+                "180": 2,
+                "212": 2,
+                "226": 2,
+                "227": 2,
+                "234": 2,
+                "235": 2,
+                "250": 3,
+                "254": 2,
+                "257": 2,
+                "261": 2,
+                "262": 2
+            },
+            "malware": {
+                "5": 2,
+                "9": 2,
+                "18": 2
+            }
+        },
+        "classTotals": {
+            "phishing": 11,
+            "benign": 78,
+            "defacement": 27,
+            "malware": 2
+        },
+        "totalExamples": 115,
+        "smoothing": 1
+    },
+    "docs": [
+        {
+            "label": "phishing",
+            "text": [
+                "br-icloud",
+                "com",
+                "br"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "mp3raid",
+                "com/music/krizz",
+                "kaliko",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "bopsecret",
+                "org/rexroth/cr/1",
+                "htm"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "garage-pirenn"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "adventure-nicaragua",
+                "net"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "buzzfil",
+                "net"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "espn",
+                "go",
+                "com/nba/player/",
+                "/id/3457/brandon-rush"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "yourbittorr",
+                "com/",
+                "anthony-hamilton-soulif"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "pashminaonlin",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "allmus",
+                "com/album/crazy-from-the-heat-r16990"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "corporationwiki",
+                "com/ohio/columbus/frank-s-benson-p3333917",
+                "aspx"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "ikenmijnkunst",
+                "nl"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "myspac",
+                "com/video/vid/30602581"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "lebensmittel-ueberwachung",
+                "de"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "szabadmunkaero",
+                "hu"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "larcadelcarneval",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "quickfact",
+                "censu",
+                "gov/qfd/maps/iowa",
+                "map",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "nugget",
+                "ca/articledisplai",
+                "aspx",
+                "archiv",
+                "true",
+                "1160966"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "uk",
+                "linkedin",
+                "com/pub/steve-rubenstein/8/718/755"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "vnic",
+                "co"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "baseball-refer",
+                "com/players/h/harrige01",
+                "shtml"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "signin",
+                "ebi",
+                "de",
+                "zukruygxctzmmqi",
+                "civpro",
+                "co",
+                "za"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "192",
+                "com/atoz/people/oakley/patrick/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "nytim",
+                "com/1998/03/29/style/cuttings-oh-that-brazen-raucous-glorious-hibiscu",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "escholarship",
+                "org/uc/item/5xt4952c"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "songfact",
+                "com/detail",
+                "php",
+                "id",
+                "13410"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "casamanana",
+                "org/education/blba/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "hollywoodlif",
+                "com"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "www",
+                "marketingbyinternet",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "en",
+                "wikipedia",
+                "org/wiki/north",
+                "dakota"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "soap",
+                "sheknow",
+                "com/daysofourlives/news/id/20259/dai",
+                "live",
+                "cast",
+                "ruta",
+                "lee/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "perfectpeopl",
+                "net/celebrity-star/6920/gidget-gein",
+                "htm"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "media",
+                "caltech",
+                "edu/press",
+                "releases/13186"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "wikiobit",
+                "com/obits/tonyproudfoot"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "vanderbilt",
+                "rival",
+                "com/viewcoach",
+                "asp",
+                "coach",
+                "2079",
+                "sport",
+                "year",
+                "2011"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "peluqueriadeautor",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "movi",
+                "yahoo",
+                "com/shop",
+                "hv",
+                "cf",
+                "info",
+                "id",
+                "1800340831"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "cyndislist",
+                "com/us/pa/counti"
+            ]
+        },
+        {
+            "label": "malware",
+            "text": [
+                "www",
+                "824555",
+                "com"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "raci"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "doc",
+                "googl",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "psycholog",
+                "wikia",
+                "com/wiki/phonem"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "info",
+                "centriq",
+                "com/content/fivereason"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "articl",
+                "baltimoresun",
+                "com/1991-06-11/sports/1991162162",
+                "james-koehler-texas-rangers-terrell-loweri"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "infinitysw",
+                "com/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "strawberrycreekgarden",
+                "com/"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "earth-sur",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "spoke",
+                "com/dir/p/desantis/nick"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "wordsmith",
+                "org/words/pignu",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "interpark",
+                "com"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "newtec",
+                "ac",
+                "uk"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "kingsmillshotel",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "almanac",
+                "logo",
+                "com/denomin"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "game",
+                "wikia",
+                "com/wiki/backbreak",
+                "video",
+                "game"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "ceu",
+                "hu/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "registri",
+                "weddingchannel",
+                "com/coupledir/20108/c/r314763282/jar",
+                "clough",
+                "tajai",
+                "ritchi",
+                "htm"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "linkedin",
+                "com/pub/george-cleveland/7/80a/599"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "sunshinemil",
+                "com/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "agoda",
+                "com/north",
+                "america/canada/montr",
+                "qc/attractions/hotel",
+                "near",
+                "mcgill",
+                "univers",
+                "centr",
+                "continu",
+                "educ",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "ctv",
+                "ca/generic/webspecials/sponsorship",
+                "scandal/"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "approvi",
+                "com",
+                "br"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "shaborooz",
+                "ir"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "veoox",
+                "com/tags/gam",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "chuckwalkertrio",
+                "blogspot",
+                "com/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "aerosolessho",
+                "org/"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "juventudelirica",
+                "com",
+                "br"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "myenrg",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "recipelink",
+                "com/msgbrd/board",
+                "14/2007/dec/29094",
+                "html"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "musimagen",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "idea",
+                "repec",
+                "org/f/pma235",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "peopleaz",
+                "org/firstname/fowlkes/6"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "orensamtraktrip",
+                "wordpress",
+                "com/"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "retajconsult",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "alexa",
+                "com/whatshot",
+                "jame",
+                "ar"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "jpopasia",
+                "com/group/arashi/discography/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "kitsapsun",
+                "com/photos/2011/feb/25/177999/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "local",
+                "yahoo",
+                "com/info-42862457-oakland-international-airport-oakland"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "tripadvisor",
+                "com/restaur",
+                "review-g680765-d1768647-reviews-yacha",
+                "yacha-miyakojima",
+                "okinawa",
+                "prefectur",
+                "kyushu",
+                "okinawa",
+                "html"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "articl",
+                "eliteft",
+                "com/articles/training-articles/five-great-exercises-for-building-a-dominant-defensive-lineman/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "broadwaystar",
+                "com/classic/",
+                "sourc",
+                "www",
+                "playbil",
+                "com"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "pn-wuppert",
+                "de"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "forum",
+                "networkinfrastructur",
+                "info/motorola-wireless-lan-switches/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "youtub",
+                "com/watch",
+                "mwpopq1spju"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "mccall-idchamb",
+                "org/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "chacha",
+                "com/question/who-said-the-quote-",
+                "27say-what-you-mean",
+                "2c-mean-what-you-say-and-put-a-beat-to-it",
+                "27"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "friar",
+                "com/sports/m-baskbl/archive/prov-m-baskbl-2003",
+                "html"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "asociacionkaribu",
+                "org"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "www",
+                "martin-busk",
+                "de"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "pipl",
+                "com/directory/name/whissell/180"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "spokeo",
+                "com/john",
+                "collet"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "parafiapiaski",
+                "pl"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "fanpag",
+                "gr"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "faq",
+                "org/copyright/handbook-for-the-individual-or-group-culture-free/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "duckduckgo",
+                "com/1/c/roman",
+                "cathol",
+                "cathedr",
+                "canada"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "alexpay2",
+                "beget",
+                "tech"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "worldoftank",
+                "ru"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "artedesignsa"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "en",
+                "wikipedia",
+                "org/wiki/lloyd",
+                "bacon"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "serverfault",
+                "com"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "viamanau",
+                "com",
+                "br"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "ciajfk",
+                "com/harold",
+                "html"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "protect-effect",
+                "nl"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "indyweek",
+                "com/artery/archives/2011/10/07/come-back-to-the-1980s-at-the-escapism-film-festival-which-begins-fridai"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "linkedin",
+                "com/pub/charles-gariepy/2/642/28"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "gst-ukrain",
+                "com",
+                "ua"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "facebook",
+                "unitedcolleg",
+                "net"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "www",
+                "bimabn",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "eyeappealoptometri",
+                "com/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "brophygen",
+                "com/"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "www",
+                "googl",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "www",
+                "amazon",
+                "com"
+            ]
+        },
+        {
+            "label": "benign",
+            "text": [
+                "facebook",
+                "com"
+            ]
+        },
+        {
+            "label": "phishing",
+            "text": [
+                "alexpay2",
+                "beget",
+                "tech"
+            ]
+        },
+        {
+            "label": "defacement",
+            "text": [
+                "www",
+                "artedesignsa"
+            ]
+        }
+    ],
+    "features": {
+        "27": 1,
+        "192": 1,
+        "2011": 1,
+        "2079": 1,
+        "13410": 1,
+        "824555": 1,
+        "1160966": 1,
+        "1800340831": 1,
+        "br-icloud": 1,
+        "com": 24,
+        "br": 4,
+        "mp3raid": 1,
+        "com/music/krizz": 1,
+        "kaliko": 1,
+        "html": 11,
+        "bopsecret": 1,
+        "org/rexroth/cr/1": 1,
+        "htm": 3,
+        "www": 28,
+        "garage-pirenn": 1,
+        "adventure-nicaragua": 1,
+        "net": 3,
+        "buzzfil": 1,
+        "espn": 1,
+        "go": 1,
+        "com/nba/player/": 1,
+        "/id/3457/brandon-rush": 1,
+        "yourbittorr": 1,
+        "com/": 8,
+        "anthony-hamilton-soulif": 1,
+        "pashminaonlin": 1,
+        "allmus": 1,
+        "com/album/crazy-from-the-heat-r16990": 1,
+        "corporationwiki": 1,
+        "com/ohio/columbus/frank-s-benson-p3333917": 1,
+        "aspx": 2,
+        "ikenmijnkunst": 1,
+        "nl": 2,
+        "myspac": 1,
+        "com/video/vid/30602581": 1,
+        "lebensmittel-ueberwachung": 1,
+        "de": 4,
+        "szabadmunkaero": 1,
+        "hu": 1,
+        "larcadelcarneval": 1,
+        "quickfact": 1,
+        "censu": 1,
+        "gov/qfd/maps/iowa": 1,
+        "map": 1,
+        "nugget": 1,
+        "ca/articledisplai": 1,
+        "archiv": 1,
+        "true": 1,
+        "uk": 2,
+        "linkedin": 3,
+        "com/pub/steve-rubenstein/8/718/755": 1,
+        "vnic": 1,
+        "co": 2,
+        "baseball-refer": 1,
+        "com/players/h/harrige01": 1,
+        "shtml": 1,
+        "signin": 1,
+        "ebi": 1,
+        "zukruygxctzmmqi": 1,
+        "civpro": 1,
+        "za": 1,
+        "com/atoz/people/oakley/patrick/": 1,
+        "nytim": 1,
+        "com/1998/03/29/style/cuttings-oh-that-brazen-raucous-glorious-hibiscu": 1,
+        "escholarship": 1,
+        "org/uc/item/5xt4952c": 1,
+        "songfact": 1,
+        "com/detail": 1,
+        "php": 1,
+        "id": 2,
+        "casamanana": 1,
+        "org/education/blba/": 1,
+        "hollywoodlif": 1,
+        "marketingbyinternet": 1,
+        "en": 2,
+        "wikipedia": 2,
+        "org/wiki/north": 1,
+        "dakota": 1,
+        "soap": 1,
+        "sheknow": 1,
+        "com/daysofourlives/news/id/20259/dai": 1,
+        "live": 1,
+        "cast": 1,
+        "ruta": 1,
+        "lee/": 1,
+        "perfectpeopl": 1,
+        "net/celebrity-star/6920/gidget-gein": 1,
+        "media": 1,
+        "caltech": 1,
+        "edu/press": 1,
+        "releases/13186": 1,
+        "wikiobit": 1,
+        "com/obits/tonyproudfoot": 1,
+        "vanderbilt": 1,
+        "rival": 1,
+        "com/viewcoach": 1,
+        "asp": 1,
+        "coach": 1,
+        "sport": 1,
+        "year": 1,
+        "peluqueriadeautor": 1,
+        "movi": 1,
+        "yahoo": 2,
+        "com/shop": 1,
+        "hv": 1,
+        "cf": 1,
+        "info": 2,
+        "cyndislist": 1,
+        "com/us/pa/counti": 1,
+        "raci": 1,
+        "doc": 1,
+        "googl": 2,
+        "psycholog": 1,
+        "wikia": 2,
+        "com/wiki/phonem": 1,
+        "centriq": 1,
+        "com/content/fivereason": 1,
+        "articl": 2,
+        "baltimoresun": 1,
+        "com/1991-06-11/sports/1991162162": 1,
+        "james-koehler-texas-rangers-terrell-loweri": 1,
+        "infinitysw": 1,
+        "strawberrycreekgarden": 1,
+        "earth-sur": 1,
+        "spoke": 1,
+        "com/dir/p/desantis/nick": 1,
+        "wordsmith": 1,
+        "org/words/pignu": 1,
+        "interpark": 1,
+        "newtec": 1,
+        "ac": 1,
+        "kingsmillshotel": 1,
+        "almanac": 1,
+        "logo": 1,
+        "com/denomin": 1,
+        "game": 2,
+        "com/wiki/backbreak": 1,
+        "video": 1,
+        "ceu": 1,
+        "hu/": 1,
+        "registri": 1,
+        "weddingchannel": 1,
+        "com/coupledir/20108/c/r314763282/jar": 1,
+        "clough": 1,
+        "tajai": 1,
+        "ritchi": 1,
+        "com/pub/george-cleveland/7/80a/599": 1,
+        "sunshinemil": 1,
+        "agoda": 1,
+        "com/north": 1,
+        "america/canada/montr": 1,
+        "qc/attractions/hotel": 1,
+        "near": 1,
+        "mcgill": 1,
+        "univers": 1,
+        "centr": 1,
+        "continu": 1,
+        "educ": 1,
+        "ctv": 1,
+        "ca/generic/webspecials/sponsorship": 1,
+        "scandal/": 1,
+        "approvi": 1,
+        "shaborooz": 1,
+        "ir": 1,
+        "veoox": 1,
+        "com/tags/gam": 1,
+        "chuckwalkertrio": 1,
+        "blogspot": 1,
+        "aerosolessho": 1,
+        "org/": 2,
+        "juventudelirica": 1,
+        "myenrg": 1,
+        "recipelink": 1,
+        "com/msgbrd/board": 1,
+        "14/2007/dec/29094": 1,
+        "musimagen": 1,
+        "idea": 1,
+        "repec": 1,
+        "org/f/pma235": 1,
+        "peopleaz": 1,
+        "org/firstname/fowlkes/6": 1,
+        "orensamtraktrip": 1,
+        "wordpress": 1,
+        "retajconsult": 1,
+        "alexa": 1,
+        "com/whatshot": 1,
+        "jame": 1,
+        "ar": 1,
+        "jpopasia": 1,
+        "com/group/arashi/discography/": 1,
+        "kitsapsun": 1,
+        "com/photos/2011/feb/25/177999/": 1,
+        "local": 1,
+        "com/info-42862457-oakland-international-airport-oakland": 1,
+        "tripadvisor": 1,
+        "com/restaur": 1,
+        "review-g680765-d1768647-reviews-yacha": 1,
+        "yacha-miyakojima": 1,
+        "okinawa": 2,
+        "prefectur": 1,
+        "kyushu": 1,
+        "eliteft": 1,
+        "com/articles/training-articles/five-great-exercises-for-building-a-dominant-defensive-lineman/": 1,
+        "broadwaystar": 1,
+        "com/classic/": 1,
+        "sourc": 1,
+        "playbil": 1,
+        "pn-wuppert": 1,
+        "forum": 1,
+        "networkinfrastructur": 1,
+        "info/motorola-wireless-lan-switches/": 1,
+        "youtub": 1,
+        "com/watch": 1,
+        "mwpopq1spju": 1,
+        "mccall-idchamb": 1,
+        "chacha": 1,
+        "com/question/who-said-the-quote-": 1,
+        "27say-what-you-mean": 1,
+        "2c-mean-what-you-say-and-put-a-beat-to-it": 1,
+        "friar": 1,
+        "com/sports/m-baskbl/archive/prov-m-baskbl-2003": 1,
+        "asociacionkaribu": 1,
+        "org": 1,
+        "martin-busk": 1,
+        "pipl": 1,
+        "com/directory/name/whissell/180": 1,
+        "spokeo": 1,
+        "com/john": 1,
+        "collet": 1,
+        "parafiapiaski": 1,
+        "pl": 1,
+        "fanpag": 1,
+        "gr": 1,
+        "faq": 1,
+        "org/copyright/handbook-for-the-individual-or-group-culture-free/": 1,
+        "duckduckgo": 1,
+        "com/1/c/roman": 1,
+        "cathol": 1,
+        "cathedr": 1,
+        "canada": 1,
+        "alexpay2": 2,
+        "beget": 2,
+        "tech": 2,
+        "worldoftank": 1,
+        "ru": 1,
+        "artedesignsa": 2,
+        "org/wiki/lloyd": 1,
+        "bacon": 1,
+        "serverfault": 1,
+        "viamanau": 1,
+        "ciajfk": 1,
+        "com/harold": 1,
+        "protect-effect": 1,
+        "indyweek": 1,
+        "com/artery/archives/2011/10/07/come-back-to-the-1980s-at-the-escapism-film-festival-which-begins-fridai": 1,
+        "com/pub/charles-gariepy/2/642/28": 1,
+        "gst-ukrain": 1,
+        "ua": 1,
+        "facebook": 2,
+        "unitedcolleg": 1,
+        "bimabn": 1,
+        "eyeappealoptometri": 1,
+        "brophygen": 1,
+        "amazon": 1
+    },
+    "stemmer": {},
+    "lastAdded": 114,
+    "Threads": null
+}

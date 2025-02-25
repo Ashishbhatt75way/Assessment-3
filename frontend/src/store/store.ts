@@ -3,15 +3,21 @@ import { useDispatch, useSelector } from "react-redux";
 import authReducer from "./reducers/authReducer";
 import { api } from "../services/api";
 import { urlApi } from "../services/urlApi";
+import { predictApi } from "../services/predictApi";
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
     [api.reducerPath]: api.reducer,
     [urlApi.reducerPath]: urlApi.reducer,
+    [predictApi.reducerPath]: predictApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(api.middleware, urlApi.middleware),
+    getDefaultMiddleware().concat(
+      api.middleware,
+      urlApi.middleware,
+      predictApi.middleware
+    ),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -7,6 +7,8 @@ import Profile from "./pages/profile";
 import Register from "./pages/register";
 import GenerateQR from "./components/GenerateQR";
 import AdminPanel from "./components/AdminPanel";
+import ShortLinkAnalytics from "./components/AnalyticsData";
+
 function App() {
   return (
     <Routes>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/generate-qr" element={<GenerateQR />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
+        <Route path="/analytics" element={<ShortLinkAnalytics />} />
       </Route>
       <Route element={<BasicLayout />}>
         <Route path="/login" element={<Login />} />

@@ -20,14 +20,14 @@ interface ApiResponse<T> {
 }
 
 interface AnalyticsData {
-  timestamp: string;
+  date: string;
   browser: string;
   device: string;
   location: string;
 }
 
 interface ShortenedURL {
-  id?: number;
+  id: string;
   originalUrl: string;
   shortCode: string;
   shortUrl: string;
