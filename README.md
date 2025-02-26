@@ -26,9 +26,10 @@ This project is a **React-based URL Shortener** that integrates an **AI-powered 
 - JSON Server (for storing shortened URLs)
 - JWT Authentication
 
-### **AI Model**
-- Natural.js (for model training)
-
+### **Backend (FAST API)**
+- Python
+- FastAPI
+- uvicorn
 ---
 
 ## Installation
@@ -39,15 +40,20 @@ cd Assessment-3
 ```
 
 ### Install Dependencies
-#### **Frontend**
+#### **frontend**
 ```bash
 cd frontend
 npm install --force
 ```
-#### **Backend**
+#### **backend**
 ```bash
 cd backend
 npm install
+```
+#### **python-backend**
+```bash
+cd python-backend
+pip install -r requirements.txt
 ```
 
 ### Start the Project
@@ -59,26 +65,31 @@ npm run dev
 ```bash
 npm run local
 ```
-
+#### **Run Python-Backend**
+```bash
+uvicorn app:app --reload
+```
 ---
 
 ## How It Works
 1. **User enters a URL** in the input field.
 2. **AI Model analyses the URL** (detects if it's phishing/malware/defacement/benign).
-3. If **safe**, the URL is shortened and stored in the database.
+3. If **safe**, the URL is shortened and stored in the db.json file which is from json-server.
 4. If **malicious**, an alert is shown.
 5. The shortened URL is provided for safe sharing.
 
 ---
 
 ## AI Model Training & Deployment
-### Training the Model (Using natural.js)
+### Training the Model (Using )
 1. Collect phishing & safe URL datasets.
 2. Extract features (length, special chars, domain age, etc.).
 3. Train a binary classification model.
-4. Export the trained model (`model.json`).
-
-
+4. Export the trained model (`eTc.sav`).
+5. Model link:
+```
+https://colab.research.google.com/drive/1PAj-A7dzVw4NUJ4_xHCcUvRsTvJktMFu?usp=sharing 
+```
 ---
 
 ## API Endpoints
@@ -95,24 +106,24 @@ POST /api/urls
 **Response:**
 ```json
 {
-  "shortUrl": "http://localhost:5173/abc123"
+  "shortUrl": "http://lh:5000/abc123"
 }
 ```
 
 ### Check Phishing Before Shortening
 ```http
-POST /api/models/predict
+POST http://localhost:8000/predict
 ```
 **Request Body:**
 ```json
 {
-  "url": "http://suspicious-site.com"
+  "url": "http://www.fake-link.com"
 }
 ```
 **Response:**
 ```json
 {
-  "data": malware,
-  "success": true
+  "url": "http://www.fake-link.com",
+  "prediction": "phishing"
 }
 ```
