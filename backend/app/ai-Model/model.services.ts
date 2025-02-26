@@ -62,13 +62,13 @@ export function loadModel(): boolean {
   if (fs.existsSync(modelPath)) {
     natural.BayesClassifier.load(modelPath, null, (err, loadedClassifier) => {
       if (err) {
-        console.error("❌ Error loading model:", err);
+        console.error("Error loading model:", err);
         return false;
       }
       Object.assign(classifier, loadedClassifier);
     });
 
-    console.log("✅ Model loaded successfully.");
+    console.log("Model loaded successfully.");
     return true;
   }
   return false;

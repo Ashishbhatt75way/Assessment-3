@@ -38,9 +38,9 @@ const GenerateQR: React.FC = () => {
     try {
       const prediction = await predictUrl(data.url);
 
-      if (prediction.data.data !== "benign") {
+      if (prediction.data.prediction !== "benign") {
         toast.error(
-          `This URL is ${prediction.data.data}!. Please try again with valid URL.`
+          `This URL is ${prediction.data.prediction}!. Please try again with valid URL.`
         );
         return;
       }
@@ -53,11 +53,11 @@ const GenerateQR: React.FC = () => {
         id: Math.random().toString(36).substring(2, 8),
         originalUrl: data.url,
         shortCode: Math.random().toString(36).substring(2, 8),
-        shortUrl: `http://localhost:5000/${Math.random()
+        shortUrl: `http://lh:5000/${Math.random()
           .toString(36)
           .substring(2, 8)}`,
         expiresAt: new Date(Date.now() + 48 * 60 * 60 * 1000).toISOString(),
-        qrCode: `http://localhost:5000/qrcodes/arb112.png?data=${data.url}`,
+        qrCode: `http://lh:5000/qrcodes/arb112.png?data=${data.url}`,
         clicks: 0,
         analytics: [
           {

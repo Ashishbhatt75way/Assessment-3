@@ -1,17 +1,17 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const VITE_API_URL = import.meta.env.VITE_API_URL;
+const VITE_PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL;
 
 export const predictApi = createApi({
   reducerPath: "predictApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: VITE_API_URL,
+    baseUrl: VITE_PYTHON_API_URL,
   }),
   endpoints: (builder) => ({
     predict: builder.mutation({
       query: (url) => {
         return {
-          url: "models/predict",
+          url: "/predict",
           method: "POST",
           body: { url },
         };

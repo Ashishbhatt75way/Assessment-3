@@ -31,9 +31,7 @@ async function trainModel() {
     validationSplit: 0.2,
   });
 
-  await model.save(
-    "file:///C:/Users/Ashis/Desktop/FE-Assessment/user-basic-auth/backend/app/ai"
-  );
+  await model.save("file:///ai");
   console.log("Model trained and saved.");
 }
 
