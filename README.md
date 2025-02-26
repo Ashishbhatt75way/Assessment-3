@@ -63,11 +63,11 @@ npm run local
 ---
 
 ## How It Works
-1️⃣ **User enters a URL** in the input field.
-2️⃣ **AI Model analyses the URL** (detects if it's phishing/malware/defacement/benign).
-3️⃣ If **safe**, the URL is shortened and stored in the database.
-4️⃣ If **malicious**, an alert is shown.
-5️⃣ The shortened URL is provided for safe sharing.
+1. **User enters a URL** in the input field.
+2. **AI Model analyses the URL** (detects if it's phishing/malware/defacement/benign).
+3. If **safe**, the URL is shortened and stored in the database.
+4. If **malicious**, an alert is shown.
+5. The shortened URL is provided for safe sharing.
 
 ---
 
