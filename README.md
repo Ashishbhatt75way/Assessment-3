@@ -1,9 +1,9 @@
-# 🚀 URL Shortener with AI-Based Phishing Detection
+# URL Shortener with AI-Based Phishing Detection
 
-## 📌 Overview
+## Overview
 This project is a **React-based URL Shortener** that integrates an **AI-powered phishing and spam detection system** to ensure users do not shorten malicious URLs. It uses **natural.js** for model deployment in the backend.
 
-## 🔥 Features
+##  Features
 - **Shorten URLs** quickly and efficiently.
 - **Generates QR Code** 
 - **AI-Based Phishing Detection** before shortening.
@@ -13,7 +13,7 @@ This project is a **React-based URL Shortener** that integrates an **AI-powered 
 
 ---
 
-## 🏗 Tech Stack
+## Tech Stack
 ### **Frontend (React.js)**
 - React.js
 - Tailwind CSS (for styling)
@@ -72,7 +72,7 @@ npm run local
 ---
 
 ## AI Model Training & Deployment
-### ** Training the Model (Using natural.js)**
+### Training the Model (Using natural.js)
 1. Collect phishing & safe URL datasets.
 2. Extract features (length, special chars, domain age, etc.).
 3. Train a binary classification model.
@@ -82,7 +82,7 @@ npm run local
 ---
 
 ## API Endpoints
-### ** Shorten URL**
+### Shorten URL
 ```http
 POST /api/urls
 ```
@@ -99,7 +99,7 @@ POST /api/urls
 }
 ```
 
-### ** Check Phishing Before Shortening**
+### Check Phishing Before Shortening
 ```http
 POST /api/models/predict
 ```
