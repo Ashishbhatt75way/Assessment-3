@@ -2,8 +2,8 @@ import { ListOrdered, UsersRound } from "lucide-react";
 import React, { Suspense } from "react";
 import { useMeQuery } from "../../services/api";
 import { useGetShortUrlsQuery } from "../../services/urlApi";
-import TableSkeleton from "../UrlTable/TableSkeleton";
-const UrlTable = React.lazy(() => import("../UrlTable"));
+import TableSkeleton from "../Table/TableSkeleton";
+const UrlTable = React.lazy(() => import("../Table"));
 
 const Page = () => {
   const { data } = useGetShortUrlsQuery();

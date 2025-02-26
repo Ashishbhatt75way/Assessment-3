@@ -7,7 +7,7 @@ import Profile from "./pages/profile";
 import Register from "./pages/register";
 import GenerateQR from "./components/GenerateQR";
 import AdminPanel from "./components/AdminPanel";
-import ShortLinkAnalytics from "./components/AnalyticsData";
+import ShortLinkAnalytics from "./components/UrlAnalytics";
 import DashBoard from "./layouts/DashBoard";
 
 function App() {

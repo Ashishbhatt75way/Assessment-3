@@ -103,47 +103,13 @@
       ]
     },
     {
-      "id": "tehvjt",
-      "originalUrl": "https://www.weatherapi.com/my/",
-      "shortCode": "stxovo",
-      "shortUrl": "http://localhost:5000/7yhf6u",
-      "expiresAt": "2025-02-27T05:50:08.158Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
-      "clicks": 18,
-      "analytics": [
-        {
-          "date": "2025-02-25",
-          "location": "Radaur, Haryana, India",
-          "browser": "chrome",
-          "device": "Windows"
-        }
-      ]
-    },
-    {
-      "id": "3udp9y",
-      "originalUrl": "https://www.weatherapi.com/my/",
-      "shortCode": "b84vat",
-      "shortUrl": "http://localhost:5000/711zz7",
-      "expiresAt": "2025-02-27T05:50:10.326Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://www.weatherapi.com/my/",
-      "clicks": 2,
-      "analytics": [
-        {
-          "date": "2025-02-25",
-          "location": "Radaur, Haryana, India",
-          "browser": "chrome",
-          "device": "Windows"
-        }
-      ]
-    },
-    {
       "id": "f4orj2",
       "originalUrl": "https://in.investing.com/indices/",
       "shortCode": "j2ntn2",
       "shortUrl": "http://localhost:5000/6trd7g",
       "expiresAt": "2025-02-27T07:37:02.298Z",
       "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://in.investing.com/indices/",
-      "clicks": 0,
+      "clicks": 40,
       "analytics": [
         {
           "date": "2025-2-25",
@@ -160,7 +126,7 @@
       "shortUrl": "http://localhost:5000/jcw6x6",
       "expiresAt": "2025-02-27T09:50:46.433Z",
       "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
-      "clicks": 0,
+      "clicks": 2,
       "analytics": [
         {
           "date": "2025-2-25",
@@ -188,13 +154,13 @@
       ]
     },
     {
-      "id": "ce9j4e",
+      "id": "yqmkry",
       "originalUrl": "https://web3.career/",
-      "shortCode": "3sl6ly",
-      "shortUrl": "http://localhost:5000/s6155a",
-      "expiresAt": "2025-02-27T11:52:17.041Z",
+      "shortCode": "tdaygq",
+      "shortUrl": "http://localhost:5000/bprs7f",
+      "expiresAt": "2025-02-27T12:51:24.941Z",
       "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
-      "clicks": 0,
+      "clicks": 6,
       "analytics": [
         {
           "date": "2025-2-25",
@@ -205,16 +171,33 @@
       ]
     },
     {
-      "id": "yqmkry",
+      "id": "lpascu",
       "originalUrl": "https://web3.career/",
-      "shortCode": "tdaygq",
-      "shortUrl": "http://localhost:5000/bprs7f",
-      "expiresAt": "2025-02-27T12:51:24.941Z",
+      "shortCode": "9rkcxt",
+      "shortUrl": "http://localhost:5000/44llrj",
+      "expiresAt": "2025-02-28T09:33:43.175Z",
       "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
       "clicks": 0,
       "analytics": [
         {
-          "date": "2025-2-25",
+          "date": "2025-2-26",
+          "location": "Kharar, Punjab, India",
+          "browser": "chrome",
+          "device": "Windows"
+        }
+      ]
+    },
+    {
+      "id": "p4rr7p",
+      "originalUrl": "https://web3.career/",
+      "shortCode": "edgi22",
+      "shortUrl": "http://localhost:5000/yja6yu",
+      "expiresAt": "2025-02-28T09:40:03.208Z",
+      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
+      "clicks": 0,
+      "analytics": [
+        {
+          "date": "2025-2-26",
           "location": "Chandigarh, Chandigarh, India",
           "browser": "chrome",
           "device": "Windows"

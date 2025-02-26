@@ -13,6 +13,7 @@ const types: string[] = [];
 
 function getDomain(url: string): string {
   const parsed = parse(url);
+
   return parsed.hostname || url;
 }
 
@@ -75,6 +76,7 @@ export function loadModel(): boolean {
 
 async function predictURL(url: string) {
   const domain = getDomain(url);
+  console.log(domain);
   const probabilities = classifier.getClassifications(domain);
 
   if (probabilities.length === 0) {

@@ -7,6 +7,7 @@ export const verifyUrl = asyncHandler(async (req, res) => {
   if (!url) {
     res.send(createResponse(null, "Data not found"));
   }
+
   const prediction = await modelServices.predict(url);
   res.send(createResponse(prediction));
 });

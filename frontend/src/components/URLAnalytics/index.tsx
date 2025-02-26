@@ -1,81 +1,28 @@
-import { Bar, BarChart, CartesianGrid, LabelList, XAxis } from "recharts";
+import { useGetShortUrlsQuery } from "@/services/urlApi";
+import { ClicksData } from "../UrlClicksData";
+import PieChart from "../PieChart";
+import TopPerformingLinksChart from "../TopUrls";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "@/components/ui/chart";
-
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
-  },
-} satisfies ChartConfig;
-
-const TopPerformingLinksChart = ({ urls }: { urls: ShortenedURL[] }) => {
-  const topLinks = [...urls]
-    .sort((a, b) => b.clicks - a.clicks)
-    .slice(0, 5)
-    .map((url) => ({
-      name: url.shortCode,
-      clicks: url.clicks,
-    }));
-
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Bar Chart - Label</CardTitle>
-        <CardDescription>Top Performing Links</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
-          <BarChart
-            accessibilityLayer
-            data={topLinks}
-            margin={{
-              top: 20,
-            }}
-          >
-            <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="name"
-              tickLine={false}
-              tickMargin={10}
-              axisLine={false}
-              tickFormatter={(value) => value.slice(0, 5)}
-            />
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
-            <Bar dataKey="clicks" fill="var(--color-desktop)" radius={8}>
-              <LabelList
-                position="top"
-                offset={12}
-                className="fill-foreground"
-                fontSize={12}
-              />
-            </Bar>
-          </BarChart>
-        </ChartContainer>
-      </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
-        <div className="leading-none text-muted-foreground">
-          Here is the top performing links of the month
+const ShortLinkAnalytics = () => {
+  const { data } = useGetShortUrlsQuery();
+  if (data)
+    return (
+      <div className="flex flex-col ml-[420px] mt-12">
+        <div className="flex flex-col mb-4 md:mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+            Short Link Analytics
+          </h1>
+          <p className="text-sm md:text-base text-[#a1a1aa]">
+            Get all the details of your short links
+          </p>
         </div>
-      </CardFooter>
-    </Card>
-  );
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-5 md:gap-10">
+          <TopPerformingLinksChart urls={data} />
+          <ClicksData />
+          <PieChart />
+        </div>
+      </div>
+    );
 };
 
-export default TopPerformingLinksChart;
+export default ShortLinkAnalytics;

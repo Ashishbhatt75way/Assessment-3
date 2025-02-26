@@ -1,28 +1,34 @@
-import { useGetShortUrlsQuery } from "@/services/urlApi";
-import { useState, useEffect } from "react";
+import { useMemo } from "react";
 
-interface LocationClicks {
+interface locationClicksResult {
   location: string;
   clicks: number;
 }
 
-const useLocationClicks = () => {
-  const { data: urlsData } = useGetShortUrlsQuery();
-  const [locationClicks, setLocationClicks] = useState<LocationClicks[]>([]);
+function useLocationClicks(data: ShortenedURL[]): locationClicksResult[] {
+  return useMemo(() => {
+    // Step 1: Aggregate clicks by location
+    const aggregatedData = data.reduce((acc: Record<string, number>, item) => {
+      const location = item.analytics[0].location.split(",")[0].trim();
+      const clicks = item.clicks;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const filteredUrls = urlsData?.filter((url) => url.clicks > 0);
-      console.log(filteredUrls);
-      if (!urlsData) {
-        return;
+      if (!acc[location]) {
+        acc[location] = 0;
       }
+      acc[location] += clicks;
 
-      fetchData();
-    };
-  }, []);
+      return acc;
+    }, {});
 
-  return { locationClicks };
-};
+    const result = Object.keys(aggregatedData).map((location) => ({
+      location,
+      clicks: aggregatedData[location],
+    }));
+
+    result.sort((a, b) => b.clicks - a.clicks);
+
+    return result;
+  }, [data]);
+}
 
 export default useLocationClicks;

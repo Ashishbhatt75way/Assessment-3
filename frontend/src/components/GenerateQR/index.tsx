@@ -40,7 +40,7 @@ const GenerateQR: React.FC = () => {
 
       if (prediction.data.data !== "benign") {
         toast.error(
-          `This URL is ${prediction.data.data}!. Please try again with valid email.`
+          `This URL is ${prediction.data.data}!. Please try again with valid URL.`
         );
         return;
       }
@@ -102,24 +102,24 @@ const GenerateQR: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex pt-32 justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 to-neutral-400 outline-none antialiased mb-8">
+    <div className="min-h-screen bg-black flex flex-col pt-32 sm:pt-24 md:pt-32 px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 to-neutral-400 outline-none antialiased mb-6 sm:mb-8">
           URL Shortener & QR Code Generator
         </h1>
 
-        <form onSubmit={handleSubmit(handleUrlSubmit)} className="mb-8">
-          <div className="flex items-center justify-center gap-4">
+        <form onSubmit={handleSubmit(handleUrlSubmit)} className="mb-6 sm:mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <input
               type="text"
               {...register("url")}
               placeholder="Enter URL"
-              className="rounded-xl w-96 h-12 pl-4 bg-neutral-800/70 text-white outline-[#060606] outline-[1px] placeholder:text-neutral-400 placeholder:text-sm placeholder-gray-400"
+              className="rounded-xl w-full sm:w-96 h-12 pl-4 bg-neutral-800/70 text-white outline-[#060606] outline-[1px] placeholder:text-neutral-400 placeholder:text-sm placeholder-gray-400 mb-3 sm:mb-0"
             />
             <button
               type="submit"
               disabled={isLoading}
-              className="h-12 px-6 py-2 bg-neutral-100 text-neutral-900 font-medium rounded-xl hover:bg-neutral-300  disabled:opacity-50"
+              className="w-full sm:w-auto h-12 px-6 py-2 bg-neutral-100 text-neutral-900 font-medium rounded-xl hover:bg-neutral-300 disabled:opacity-50"
             >
               {isLoading ? (
                 <CircularProgress size={24} className="text-white" />
@@ -141,31 +141,40 @@ const GenerateQR: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className=" bg-neutral-50 max-w-[550px] mx-auto flex flex-col items-center rounded-xl shadow-lg p-6 mt-4"
+              className="bg-neutral-50 w-full max-w-[550px] mx-auto flex flex-col items-center rounded-xl shadow-lg p-4 sm:p-6 mt-4"
             >
-              <h2 className="text-3xl text-center font-semibold text-gray-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl text-center font-semibold text-gray-900 mb-3 sm:mb-4">
                 Generated QR Code
               </h2>
-              <div className="flex flex-col items-center justify-center">
-                <div className="shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-white p-4 rounded-lg mt-2">
-                  <QRCodeSVG value={urlData.shortUrl} size={200} level="H" />
+              <div className="flex flex-col items-center justify-center w-full">
+                <div className="shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-white p-3 sm:p-4 rounded-lg mt-2">
+                  <QRCodeSVG
+                    value={urlData.shortUrl}
+                    size={150}
+                    className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px]"
+                    level="H"
+                  />
                 </div>
-                <div className="flex gap-6">
-                  <a className="text-gray-700 text-base mt-4 cursor-pointer">
+                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 w-full mt-4">
+                  <a className="text-gray-700 text-sm sm:text-base text-center sm:text-left cursor-pointer truncate max-w-full">
                     Shortened URL: {urlData.shortUrl}
                   </a>
-                  <button
-                    onClick={() => copyToClipboard(urlData.shortUrl)}
-                    className="mt-2 text-blue-500"
-                  >
-                    <ContentCopy />
-                  </button>
-                  <button
-                    onClick={() => shareUrl(urlData.shortUrl)}
-                    className="mt-2 text-green-500"
-                  >
-                    <Share />
-                  </button>
+                  <div className="flex gap-4 mt-2 sm:mt-0">
+                    <button
+                      onClick={() => copyToClipboard(urlData.shortUrl)}
+                      className="text-blue-500"
+                      aria-label="Copy to clipboard"
+                    >
+                      <ContentCopy />
+                    </button>
+                    <button
+                      onClick={() => shareUrl(urlData.shortUrl)}
+                      className="text-green-500"
+                      aria-label="Share URL"
+                    >
+                      <Share />
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -173,7 +182,7 @@ const GenerateQR: React.FC = () => {
         </AnimatePresence>
 
         {snackbarOpen && (
-          <div className="fixed bottom-4 left-1/2 text-sm transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg">
+          <div className="fixed bottom-4 left-1/2 text-sm transform -translate-x-1/2 bg-gray-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg z-50">
             Copied to clipboard
           </div>
         )}

@@ -10,7 +10,7 @@ export const urlSlice = createSlice({
     addUrl: (state, action: PayloadAction<ShortenedURL>) => {
       state.push(action.payload);
     },
-    deleteUrl: (state, action: PayloadAction<{ id: number }>) => {
+    deleteUrl: (state, action: PayloadAction<{ id: string }>) => {
       return state.filter((url) => url.id !== action.payload.id);
     },
   },
@@ -23,7 +23,7 @@ export const urlSlice = createSlice({
     );
     builder.addMatcher(
       urlApi.endpoints.deleteShortUrl.matchFulfilled,
-      (state, action: PayloadAction<{ id: number }>) => {
+      (state, action: PayloadAction<{ id: string }>) => {
         return state.filter((url) => url.id !== action.payload.id);
       }
     );
