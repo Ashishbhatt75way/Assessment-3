@@ -33,7 +33,7 @@ const Hero = () => {
             }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="text-[80px] leading-[96px] mt-12 bg-clip-text text-transparent bg-gradient-to-br from-[#eeeeee] to-[#e1e1e1] pointer-events-none text-center font-bold"
+            className="text-[80px] leading-[96px] mt-12 bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 via-white to-white pointer-events-none text-center font-bold"
           >
             AI-Powered URL Shortener Secure, Smart, and Instant
           </motion.h1>
@@ -54,7 +54,6 @@ const Hero = () => {
                 transition={{ duration: 0.4, delay: 1.4 }}
                 className="bg-[#f2f2f2] blur-md absolute px-4 py-2 h-full min-w-[200px] rounded-full text-black font-semibold"
               />
-
               <motion.button
                 onClick={() => navigate("/generate-qr")}
                 initial={{ opacity: 0 }}

@@ -54,9 +54,9 @@ const UrlTable: React.FC = () => {
             </thead>
 
             <tbody>
-              {paginatedUrls.map((url) => (
+              {paginatedUrls.map((url, index) => (
                 <motion.tr
-                  key={url.id}
+                  key={index}
                   className="border-b border-gray-700 hover:bg-gray-800/10"
                 >
                   <motion.td

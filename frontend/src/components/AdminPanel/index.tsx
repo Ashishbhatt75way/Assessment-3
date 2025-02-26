@@ -1,7 +1,9 @@
 import { ListOrdered, UsersRound } from "lucide-react";
+import React, { Suspense } from "react";
 import { useMeQuery } from "../../services/api";
 import { useGetShortUrlsQuery } from "../../services/urlApi";
-import UrlTable from "../UrlTable";
+import TableSkeleton from "../UrlTable/TableSkeleton";
+const UrlTable = React.lazy(() => import("../UrlTable"));
 
 const Page = () => {
   const { data } = useGetShortUrlsQuery();
@@ -31,7 +33,7 @@ const Page = () => {
                   </h2>
                   {data && (
                     <p className="font-bold text-3xl text-white">
-                      {data.length ? data.length : 0}
+                      {data?.length ? data?.length : 0}
                     </p>
                   )}
                 </div>
@@ -45,13 +47,15 @@ const Page = () => {
                   <h2 className="font-light text-[#a1a1aa]">Active Links</h2>
                   {data && (
                     <p className="font-bold text-3xl text-white">
-                      {data.length ? data.length : 0}
+                      {data?.length ? data?.length : 0}
                     </p>
                   )}
                 </div>
               </div>
             </div>
-            {data && <UrlTable />}
+            <Suspense fallback={<TableSkeleton />}>
+              {data && <UrlTable />}
+            </Suspense>
           </div>
         </div>
       </div>

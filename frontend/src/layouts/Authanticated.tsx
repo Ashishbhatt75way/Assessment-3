@@ -21,8 +21,8 @@ export default function Authanticated() {
 
   return (
     <>
-      <div className="navbar p-5 w-full bg-black text-slate-300 border-b-[1px] fixed z-[100] border-[#fff]/20">
-        <div className="flex items-center justify-between mx-auto px-20">
+      <nav className="py-5 w-full bg-black text-slate-300 border-b-[1px] fixed z-[100] border-[#fff]/20">
+        <div className="flex items-center justify-between mx-auto max-w-[1100px] w-full px-4">
           <button
             onClick={() => navigate("/")}
             className="flex items-center gap-2 cursor-pointer"
@@ -33,19 +33,19 @@ export default function Authanticated() {
           <div className="flex gap-10 items-center font-medium tracking-wide leading-6 justify-center">
             <NavLink
               to={"/"}
-              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
+              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f] after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
             >
               Home
             </NavLink>
             <NavLink
               to={"/generate-qr"}
-              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
+              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f] after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
             >
               Generate QR
             </NavLink>
             <NavLink
               to={"/admin-panel"}
-              className="relative after:absolute after:w-0 after:h-0.5   after:-bottom-1 after:left-0 after:bg-[#dbff6f]  after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
+              className="relative after:absolute after:w-0 after:h-0.5 after:-bottom-1 after:left-0 after:bg-[#dbff6f] after:content-[''] after:transition-all after:duration-[0.3] hover:after:w-full hover:text-[#dbff6e]"
             >
               Admin Panel
             </NavLink>
@@ -60,7 +60,8 @@ export default function Authanticated() {
             </button>
           </div>
         </div>
-      </div>
+      </nav>
+
       <Outlet />
     </>
   );
