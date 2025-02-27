@@ -19,7 +19,6 @@ function Basic() {
             <img src="/logo.png" alt="logo" className="w-7 h-7" />
             <span className="text-2xl font-bold">URL Shortener</span>
           </button>
-
           <div className="flex gap-4">
             <button
               className="text-white bg-neutral-800 rounded-full px-8 py-2"

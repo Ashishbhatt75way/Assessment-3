@@ -12,7 +12,7 @@ export const dashboardSidebar = [
   {
     name: "Dashboard",
     icon: LayoutDashboard,
-    path: "/",
+    path: "/admin-panel",
   },
   {
     name: "Analytics",
@@ -22,21 +22,21 @@ export const dashboardSidebar = [
   {
     name: "Customers",
     icon: Contact2Icon,
-    path: "/panel",
+    path: "/admin-panel",
   },
   {
     name: "Earnings",
     icon: DollarSign,
-    path: "/panel",
+    path: "/admin-panel",
   },
   {
     name: "Offers",
     icon: TicketPercent,
-    path: "/panel",
+    path: "/admin-panel",
   },
   {
     name: "Help",
     icon: HelpCircle,
-    path: "/panel",
+    path: "/admin-panel",
   },
 ];

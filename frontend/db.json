@@ -152,23 +152,6 @@
           "device": "Windows"
         }
       ]
-    },
-    {
-      "id": "p4rr7p",
-      "originalUrl": "https://web3.career/",
-      "shortCode": "edgi22",
-      "shortUrl": "http://localhost:5000/yja6yu",
-      "expiresAt": "2025-02-28T09:40:03.208Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
-      "clicks": 0,
-      "analytics": [
-        {
-          "date": "2025-2-26",
-          "location": "Chandigarh, Chandigarh, India",
-          "browser": "chrome",
-          "device": "Windows"
-        }
-      ]
     }
   ]
 }

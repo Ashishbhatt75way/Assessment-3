@@ -35,24 +35,24 @@ const UrlTable: React.FC = () => {
       <h2 className="font-bold text-2xl">Shortened URLs</h2>
       <p className="text-[#a1a1aa]">Manage your active URLs</p>
 
-      <div className="overflow-x-auto h-[500px] mt-4">
+      <div className="overflow-x-auto h-[450px] mt-4">
         <table className="w-full border bg-neutral-900/15 rounded-2xl">
-          <AnimatePresence>
-            <thead className="bg-neutral-900/80 text-white ">
-              <tr>
-                <th className="px-4 py-3 text-left w-40 whitespace-nowrap">
-                  Short URL
-                </th>
-                <th className="px-4 py-3 text-left w-64 whitespace-nowrap">
-                  Original URL
-                </th>
-                <th className="px-4 py-3 text-left w-20">Clicks</th>
-                <th className="px-4 py-3 text-left w-40">Expires At</th>
-                <th className="px-4 py-3 text-left w-80">Recent Analytics</th>
-                <th className="px-4 py-3 text-left w-20">Actions</th>
-              </tr>
-            </thead>
+          <thead className="bg-neutral-900/80 text-white ">
+            <tr>
+              <th className="px-4 py-3 text-left w-40 whitespace-nowrap">
+                Short URL
+              </th>
+              <th className="px-4 py-3 text-left w-64 whitespace-nowrap">
+                Original URL
+              </th>
+              <th className="px-4 py-3 text-left w-20">Clicks</th>
+              <th className="px-4 py-3 text-left w-40">Expires At</th>
+              <th className="px-4 py-3 text-left w-80">Recent Analytics</th>
+              <th className="px-4 py-3 text-left w-20">Actions</th>
+            </tr>
+          </thead>
 
+          <AnimatePresence>
             <tbody>
               {paginatedUrls.map((url, index) => (
                 <motion.tr
