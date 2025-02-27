@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # Load trained model
-model = joblib.load("eTc.sav")  # Ensure this model file exists
+model = joblib.load("eTc.sav")
 
 # Initialize FastAPI app
 app = FastAPI(title="AI-Powered URL Shortener - Spam Detector")
@@ -428,12 +428,10 @@ async def root():
 @app.post("/predict")
 async def predict_url(data: URLRequest):
     try:
-        # Preprocess the URL and make a prediction
         processed_url = preprocess_url(data.url)
         print(processed_url)
         prediction_int, prediction_label = model_predict(data.url)
 
-        # Return the result
         result = {"url": data.url, "prediction": prediction_label}
         return result
     except Exception as e:

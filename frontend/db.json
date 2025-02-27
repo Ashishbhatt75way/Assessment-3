@@ -137,23 +137,6 @@
       ]
     },
     {
-      "id": "rexyh8",
-      "originalUrl": "https://updraft.cyfrin.io/courses",
-      "shortCode": "c7vpwq",
-      "shortUrl": "http://localhost:5000/zueq3z",
-      "expiresAt": "2025-02-27T10:33:15.075Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://updraft.cyfrin.io/courses",
-      "clicks": 0,
-      "analytics": [
-        {
-          "date": "2025-2-25",
-          "location": "Chandigarh, Chandigarh, India",
-          "browser": "chrome",
-          "device": "Windows"
-        }
-      ]
-    },
-    {
       "id": "yqmkry",
       "originalUrl": "https://web3.career/",
       "shortCode": "tdaygq",
@@ -165,23 +148,6 @@
         {
           "date": "2025-2-25",
           "location": "Chandigarh, Chandigarh, India",
-          "browser": "chrome",
-          "device": "Windows"
-        }
-      ]
-    },
-    {
-      "id": "lpascu",
-      "originalUrl": "https://web3.career/",
-      "shortCode": "9rkcxt",
-      "shortUrl": "http://localhost:5000/44llrj",
-      "expiresAt": "2025-02-28T09:33:43.175Z",
-      "qrCode": "http://localhost:5000/qrcodes/arb112.png?data=https://web3.career/",
-      "clicks": 0,
-      "analytics": [
-        {
-          "date": "2025-2-26",
-          "location": "Kharar, Punjab, India",
           "browser": "chrome",
           "device": "Windows"
         }

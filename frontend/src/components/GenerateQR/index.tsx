@@ -12,7 +12,7 @@ import { useCreateShortUrlMutation } from "../../services/urlApi";
 import { AnimatePresence, motion } from "motion/react";
 
 const schema = yup.object().shape({
-  url: yup.string().url("Invalid URL").required("URL is required"),
+  url: yup.string().required("URL is required"),
 });
 
 type FormData = yup.InferType<typeof schema>;
@@ -22,7 +22,6 @@ const GenerateQR: React.FC = () => {
   const [snackbarOpen, setSnackbarOpen] = useState<boolean>(false);
   const [createShortUrl, { isLoading }] = useCreateShortUrlMutation();
   const deviceDetails = useDeviceDetails();
-
   const [predictUrl] = usePredictMutation();
 
   const {
@@ -58,7 +57,7 @@ const GenerateQR: React.FC = () => {
           .substring(2, 8)}`,
         expiresAt: new Date(Date.now() + 48 * 60 * 60 * 1000).toISOString(),
         qrCode: `http://lh:5000/qrcodes/arb112.png?data=${data.url}`,
-        clicks: 0,
+        clicks: Math.random() * 50,
         analytics: [
           {
             date,

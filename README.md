@@ -69,6 +69,10 @@ npm run local
 ```bash
 uvicorn app:app --reload
 ```
+#### **Run JSON-Server**
+```bash
+json-server --watch db.json --port 5000
+```
 ---
 
 ## How It Works
@@ -77,7 +81,6 @@ uvicorn app:app --reload
 3. If **safe**, the URL is shortened and stored in the db.json file which is from json-server.
 4. If **malicious**, an alert is shown.
 5. The shortened URL is provided for safe sharing.
-
 ---
 
 ## AI Model Training & Deployment
