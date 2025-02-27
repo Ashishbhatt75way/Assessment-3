@@ -71,6 +71,8 @@ uvicorn app:app --reload
 ```
 #### **Run JSON-Server**
 ```bash
+cd frontend
+
 json-server --watch db.json --port 5000
 ```
 ---
